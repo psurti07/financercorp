@@ -223,7 +223,7 @@ if (!function_exists('raiseRequestFaqs')) {
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                  Please contact the company at +91-{#VAR#} between 10 AM and 5 PM Monday through Saturday (business days only). Allow us to discuss your concerns, and we will ensure that you get the best possible solutions.  
+                                  Please contact the company at +91-75075-36355 between 10 AM and 5 PM Monday through Saturday (business days only). Allow us to discuss your concerns, and we will ensure that you get the best possible solutions.  
                                 </p>
                             </div>
                         </div>

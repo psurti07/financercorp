@@ -462,7 +462,7 @@
                                                                     <tr>
                                                                         <td align="left" style="padding: 20px; margin: 0; line-height: 2rem;border: 1px solid #48a111;
                                                                             border-radius: 12px;
-                                                                            background-color: #E9F2FB;">
+                                                                            background-color: #f2fff2;">
                                                                             @yield('content')
                                                                         </td>
                                                                     </tr>

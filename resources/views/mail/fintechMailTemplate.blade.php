@@ -317,7 +317,7 @@
                                                                                                         valign="top"
                                                                                                         style="padding: 0; margin: 0; padding-right: 10px;">
                                                                                                         <a target="_blank"
-                                                                                                            href="https://twitter.com/Financercorp"
+                                                                                                            href="{{ config('constant.SM_TWITTER') }}"
                                                                                                             style="
                                                                                                                 -webkit-text-size-adjust: none;
                                                                                                                 -ms-text-size-adjust: none;
@@ -345,7 +345,7 @@
                                                                                                         valign="top"
                                                                                                         style="padding: 0; margin: 0; padding-right: 10px;">
                                                                                                         <a target="_blank"
-                                                                                                            href="https://in.pinterest.com/financercorp/"
+                                                                                                            href="{{ config('constant.SM_PINTEREST') }}"
                                                                                                             style="
                                                                                                                 -webkit-text-size-adjust: none;
                                                                                                                 -ms-text-size-adjust: none;
@@ -377,7 +377,7 @@
                                                                                                         valign="top"
                                                                                                         style="padding: 0; margin: 0; padding-right:10px">
                                                                                                         <a target="_blank"
-                                                                                                            href="http://www.youtube.com/@Financercorp"
+                                                                                                            href="{{ config('constant.SM_YOUTUBE') }}"
                                                                                                             style="
                                                                                                                 -webkit-text-size-adjust: none;
                                                                                                                 -ms-text-size-adjust: none;
@@ -410,7 +410,7 @@
                                                                                                         valign="top"
                                                                                                         style="padding: 0; margin: 0;padding-right:10px">
                                                                                                         <a target="_blank"
-                                                                                                            href="https://www.facebook.com/@Financercorp.in"
+                                                                                                            href="{{ config('constant.SM_FACEBOOK') }}"
                                                                                                             style="
                                                                                                                 -webkit-text-size-adjust: none;
                                                                                                                 -ms-text-size-adjust: none;
@@ -442,7 +442,7 @@
                                                                                                         valign="top"
                                                                                                         style="padding: 0; margin: 0;">
                                                                                                         <a target="_blank"
-                                                                                                            href="https://www.instagram.com/financercorp/"
+                                                                                                            href="{{ config('constant.SM_INSTAGRAM') }}"
                                                                                                             style="
                                                                                                                 -webkit-text-size-adjust: none;
                                                                                                                 -ms-text-size-adjust: none;
