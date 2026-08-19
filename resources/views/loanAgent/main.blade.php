@@ -303,16 +303,16 @@
                     <div class="form-holder">
                         <div class="contact-form-notice">
                             <p class="s-14">
-                                <strong>Disclosure:</strong> The Loan Tenure ranges from minimum 6 months to maximum of 60 months, with annual interest rates starting at 11% and going up to 34%. A processing fee up to 2% may be applicable. Representative Example: If a loan of ₹1,00,000 is availed at an interest rate of 12.5% per annum for a tenure of 12 months, and a processing fee of 2% is applied: Interest Payable: ₹6,720 approx. Processing Fee: ₹2,000. Total Loan Cost (including interest + fee): ₹1,08,720. APR (Annual Percentage Rate): 14.27% approx. Financercorp is not a direct lender itself. Instead we provide consultation services to help users connect with right NBFCs for loan approval. *T&C Apply. All these numbers are tentative/indicative, the final loan specifics may vary depending upon the customer profile and NBFCs’ criteria, rules & regulations, and terms & conditions.
+                                <strong>Important Note :</strong> We ask our customers to make payments ONLY on our website Financercorp.com and NOT through any other source, directly or indirectly.
                             </p>
                             <p class="s-14">
-                                <strong>Disclaimer:</strong> Financercorp is a loan service aggregator and is authorised to provide services on behalf of its Lending Partners.The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval.
+                                <strong>Disclaimer : </strong>Financercorp Private Limited is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.
                             </p>
                             <p class="s-14">
-                                <strong>Important Note:</strong> BE AWARE! We ask our customers to make payments ONLY on our website https://financercorp.com and NOT through any other source, directly or indirectly. Thanks!
+                                <strong>Pre-Application Note:</strong> Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
                             </p>
                             <p class="s-14">
-                                <strong>Registered Office Address:</strong> {{ config('constant.COMPANY_ADDRESS') }} <br/> Mobile: {{ config('constant.COMPANY_MOBILE') }} | Email: {{ config('constant.INFO_EMAIL') }}
+                                <strong>Registered Office Address:</strong> {{ config('constant.COMPANY_ADDRESS'); }} <br /> Mobile: {{ config('constant.COMPANY_MOBILE'); }} | Email: {{ config('constant.INFO_EMAIL') }}
                             </p>
                         </div>
                     </div>
