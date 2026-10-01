@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Log;
+
     if(!function_exists('user_track')){
         function user_track($postData){
-            $curl = curl_init();
             $map = [
                 // Self product tags → Self key
                 'Self Get Offer'          => config('constant.SELF_INTERAKT_KEY'),
@@ -19,33 +20,32 @@
 
             $tag = $postData['tags'][0] ?? null; // safely get first tag
             $key = $map[$tag] ?? null;
-            curl_setopt_array($curl, [
-                CURLOPT_URL => "https://api.interakt.ai/v1/public/track/users/",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => json_encode($postData),
-                CURLOPT_HTTPHEADER => [
-                    "Authorization: Basic " . $key,
-                    "Content-Type: application/json"
-                ],
+            $headers = [
+                "Authorization" => "Basic " . $key,
+                "Content-Type" => "application/json"
+            ];
+
+            Log::info('Interakt request', [
+                'type' => 'user_track',
+                'url' => 'https://api.interakt.ai/v1/public/track/users/',
+                'request' => $postData,
             ]);
-
-            $response = curl_exec($curl);
-            $err = curl_error($curl);
-            curl_close($curl);
-
-            $result = json_decode($response, true);
-            return $result;
+            $response = commanCurlCall(
+                "https://api.interakt.ai/v1/public/track/users/",
+                'POST',
+                $postData,
+                $headers
+            );
+            Log::info('Interakt response', [
+                'type' => 'user_track',
+                'response' => $response,
+            ]);
+            return $response['response'] ?? null;
         }
     }
 
     if(!function_exists('event_track')){
         function event_track($postData){
-            $curl = curl_init();
             $arr = $map = [
                 'Self Get Offer'            => config('constant.SELF_INTERAKT_KEY'),
                 'Self Payment Successful'    => config('constant.SELF_INTERAKT_KEY'),
@@ -63,27 +63,27 @@
             $event = $postData['event'] ?? null; // safely get first tag
             $key = $map[$event] ?? null;
                         
-            curl_setopt_array($curl, [
-                CURLOPT_URL => "https://api.interakt.ai/v1/public/track/events/",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => json_encode($postData),
-                CURLOPT_HTTPHEADER => [
-                    "Authorization: Basic " . $key,
-                    "Content-Type: application/json"
-                ],
+            $headers = [
+                "Authorization" => "Basic " . $key,
+                "Content-Type" => "application/json"
+            ];
+
+            Log::info('Interakt request', [
+                'type' => 'event_track',
+                'url' => 'https://api.interakt.ai/v1/public/track/events/',
+                'request' => $postData,
             ]);
-
-            $response = curl_exec($curl);
-            $err = curl_error($curl);
-            curl_close($curl);
-
-            $result = json_decode($response, true);
-            return $result;
+            $response = commanCurlCall(
+                "https://api.interakt.ai/v1/public/track/events/",
+                'POST',
+                $postData,
+                $headers
+            );
+            Log::info('Interakt response', [
+                'type' => 'event_track',
+                'response' => $response,
+            ]);
+            return $response['response'] ?? null;
         }
     }
     
@@ -93,28 +93,31 @@
             Log::info(json_encode($postData));
             Log::info($key);*/
             
-            $curl = curl_init();
             //$key = ($type == 'self') ? config('constant.SELF_INTERAKT_KEY') : config('constant.HIRE_INTERAKT_KEY');
-            curl_setopt_array($curl, [
-                CURLOPT_URL => "https://api.interakt.ai/v1/public/message/",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => json_encode($postData),
-                CURLOPT_HTTPHEADER => [
-                    "Authorization: Basic " . $key,
-                    "Content-Type: application/json"
-                ],
+            $headers = [
+                "Authorization" => "Basic " . $key,
+                "Content-Type" => "application/json"
+            ];
+
+            Log::info('Interakt request', [
+                'type' => 'message',
+                'channel' => $type,
+                'url' => 'https://api.interakt.ai/v1/public/message/',
+                'request' => $postData,
+            ]);
+            $response = commanCurlCall(
+                "https://api.interakt.ai/v1/public/message/",
+                'POST',
+                $postData,
+                $headers
+            );
+            Log::info('Interakt response', [
+                'type' => 'message',
+                'channel' => $type,
+                'response' => $response,
             ]);
 
-            $response = curl_exec($curl);
-            $err = curl_error($curl);
-            curl_close($curl);
-
-            return $response;
+            return json_encode($response['response'] ?? null);
         }
 
     }

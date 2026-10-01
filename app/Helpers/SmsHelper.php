@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 
 if(!function_exists('sendSingleSMS')){
     function sendSingleSMS($mobile, $otp, $panel = 'self'){
-        $message = "Hello, the Financercorp OTP for your mobile number registration is ".$otp.". Kindly do not share it with anyone. Thanks, financercorp";
+        $message = "Hello, the MyMoneyLend OTP for your mobile number registration is ".$otp.". Kindly do not share it with anyone. Thanks, mymoneylend";
         // URL encode the message
        // URL encode the message
         $sms_text = urlencode($message);
@@ -30,7 +30,19 @@ if(!function_exists('sendSingleSMS')){
         // $api_url = "43.204.206.165/sendsms.jsp?user={$username}&password={$password}&senderid={$sender_id}&mobiles={$mobile}&sms={$sms_text}";
 
         // Submit the request to the server
+        Log::info('SMS request', [
+            'type' => 'single',
+            'panel' => $panel,
+            'mobile' => $mobile,
+            'sender_id' => $sender_id,
+        ]);
         $response = Http::get($api_url);
+        Log::info('SMS response', [
+            'type' => 'single',
+            'mobile' => $mobile,
+            'status_code' => $response->status(),
+            'body' => $response->body(),
+        ]);
 
         // Return the response
         return [
@@ -71,9 +83,22 @@ if(!function_exists('sendDynamicSMS')){
         }
         
         // Submit the request to the server
+        Log::info('SMS request', [
+            'type' => 'dynamic',
+            'panel' => $panel,
+            'mobile' => $mobile,
+            'sender_id' => $senderId,
+            'message' => $message,
+            'template_id' => $tempId,
+        ]);
         $response = Http::get($api_url);
 
-        // Log::info($response);
+        Log::info('SMS response', [
+            'type' => 'dynamic',
+            'mobile' => $mobile,
+            'status_code' => $response->status(),
+            'body' => $response->body(),
+        ]);
         // Return the response
         return [
             'status_code' => $response->status(),
@@ -86,6 +111,11 @@ if(!function_exists('sendDynamicXMLSMS')){
     function sendDynamicXMLSMS($dataset){
         $xmldataset = "<?xml version='1.0'?><smslist>".$dataset.'</smslist>';
 
+        Log::info('SMS request', [
+            'type' => 'dynamic_xml',
+            'url' => 'http://m.onlinebusinessbazaar.in/sendsms.jsp?',
+            'body' => $xmldataset,
+        ]);
         $curl = curl_init();
         curl_setopt_array($curl, [
             CURLOPT_URL => 'http://m.onlinebusinessbazaar.in/sendsms.jsp?',
@@ -106,6 +136,12 @@ if(!function_exists('sendDynamicXMLSMS')){
 
         $response = curl_exec($curl);
         $err = curl_error($curl);
+        Log::info('SMS response', [
+            'type' => 'dynamic_xml',
+            'status_code' => curl_getinfo($curl, CURLINFO_HTTP_CODE),
+            'body' => $response,
+            'error' => $err ?: null,
+        ]);
         curl_close($curl);
 
         /*if ($err) {

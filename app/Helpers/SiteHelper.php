@@ -109,7 +109,7 @@ if (!function_exists('nbfcsList')) {
             $data['list'] .= '<div class="col company" data-index="' . $loop . '">
                             <a href="javascript:;" class="in_tool it-1 r-10">
                                 <div class="bg--white-100 block-shadow r-10 mb-20">
-                                    <img class="img-fluid" src="https://manage.financercorp.com/public/upload/banks/'.$bank->bank_image.'" alt="' . $bank->bank_name . '" width="auto">
+                                    <img class="img-fluid" src="https://manage.mymoneylend.com/public/upload/banks/'.$bank->bank_image.'" alt="' . $bank->bank_name . '" width="auto">
                                 </div>
                                 <h6 class="s-14 w-700">' . $bank->bank_name . '</h6>
                             </a>
@@ -117,7 +117,7 @@ if (!function_exists('nbfcsList')) {
 
             $data['carousel'] .= '<div class="bg--white-100 border border-primary r-10 mb-20">
                                     <a href="javascript:;">
-                                        <img class="img-fluid" src="https://manage.financercorp.com/public/upload/banks/'.$bank->bank_image.'" alt="' . $bank->bank_name . '" width="auto">
+                                        <img class="img-fluid" src="https://manage.mymoneylend.com/public/upload/banks/'.$bank->bank_image.'" alt="' . $bank->bank_name . '" width="auto">
                                     </a>
                                 </div>';
             $loop++;
@@ -134,26 +134,26 @@ if (!function_exists('raiseRequestFaqs')) {
             <ul class="accordion">
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Although I paid, my account has not yet been created. What should I do now?</h6>
+                        <h6 class="s-16 w-500">I made the payment but the account is still not created. What should I do?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                This could happen if the payment gateway holds your funds but has not yet credited the company account. Do not worry; once the funds are credited to the company account, your account will be created and you will be notified by email. Otherwise, the payment gateway will refund your funds in accordance with their policies.</p>
+                                This may happen if your amount is held by the payment gateway and yet to be credited to the company’s account. Do not worry; once the funds are credited to the company’s  account, your account will be created and you will be notified via email. Otherwise, the payment gateway will refund your funds in accordance with their policies.</p>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500"> I still have not received my refund after so many days. What should I do now?</h6>
+                        <h6 class="s-16 w-500">Even after so many days, I have not received my refund. What should I do?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    This could happen if your funds are held by the bank/payment gateway. It will be refunded as per their terms and conditions.
+                                    This could happen if your money is held by the bank or payment gateway. It will be refunded as per the bank/payment gateway’s rules and regulations.
                                 </p>
                             </div>
                         </div>
@@ -161,13 +161,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I misunderstood the company services and/or paid by mistake. Can I get a refund? </h6>
+                        <h6 class="s-16 w-500">I misunderstood the company’s service/made payment by mistake. Can I get a refund?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    The subscription plan payment is only refundable according to the company cancellation and refund policy. <a href="' . route('front.refund.policy') . '">Click here to view the refund policy.</a>
+                                    The subscription plan payment is only refundable under the company’s cancellation and refund policy. <a href="' . route('front.refund.policy') . '">Click here</a> to know more.
                                 </p>
                             </div>
                         </div>
@@ -175,13 +175,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Despite being presented with pre-approved loan offers based on my eligibility, I did not receive one.Why?</h6>
+                        <h6 class="s-16 w-500">I was shown pre-approved loan offers based on my eligibility, but I did not receive an actual loan. Why?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                   Please read the company terms and conditions to fully understand what a pre-approval loan offer entails. 
+                                    Please read the terms and conditions to get a clear understanding of what a pre-approval loan offer is.<a href="' . route('self.apply.main') . '">Click here.</a>
                                 </p>
                             </div>
                         </div>
@@ -189,13 +189,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Who can file a GST return?</h6>
+                        <h6 class="s-16 w-500">Who can get a GST return? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    Anyone who updates their GST information using the portal will receive a GST return.
+                                    Anyone who has updated their GST information in the portal will receive a GST return.
                                 </p>
                             </div>
                         </div>
@@ -203,13 +203,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I changed my mind and no longer want to use the company services. Can I receive a refund? </h6>
+                        <h6 class="s-16 w-500">I have changed my mind and do not want to use the company’s services. Can I get the refund? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                   The subscription plan payment is only refundable according to the company cancellation and refund policy.
+                                   The subscription plan payment is only refundable under the company’s cancellation and refund policy. 
                                 </p>
                             </div>
                         </div>
@@ -217,13 +217,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">I am not satisfied with the company service. What should I do now? </h6>
+                        <h6 class="s-16 w-500">I am not happy with the company’s service. What should I do?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                  Please contact the company at +91-75075-36355 between 10 AM and 5 PM Monday through Saturday (business days only). Allow us to discuss your concerns, and we will ensure that you get the best possible solutions.  
+                                   We request you to kindly call the company on +91-{#VAR#} between 10 AM to 5 PM- Monday to Saturday (only business days). Allow us to discuss your concerns, and we will ensure that you receive the best solutions possible. 
                                 </p>
                             </div>
                         </div>
@@ -231,13 +231,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">What happens if I accidentally make several payments? Am I entitled to a refund?</h6>
+                        <h6 class="s-16 w-500">What happens if I make more than one payment by mistake? Am I eligible for a refund? </h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                   If you make multiple payments by mistake, you can get a refund. You can request a refund within 48 hours of making the payment by going to the website Raising A Request section or calling the company registered contact number.
+                                   If a customer makes more than one payment, they are eligible for a refund. You can request a refund within 48 hours of making the payment via the website’s Raising A Request section or by calling the company’s registered contact number.
                                 </p>
                             </div>
                         </div>
@@ -245,13 +245,13 @@ if (!function_exists('raiseRequestFaqs')) {
                 </li>
                 <li class="accordion-item mb-10">
                     <div class="accordion-thumb">
-                        <h6 class="s-16 w-500">Can I receive a refund if I purchase subscriptions or memberships from multiple companies in your group?</h6>
+                        <h6 class="s-16 w-500">Can I get a refund if I purchase subscriptions/memberships from multiple companies in your group of companies?</h6>
                     </div>
                     <div class="accordion-panel">
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                   If a customer purchased Subscriptions/Memberships from multiple companies in our group, they are entitled to a refund. You can request a refund within 48 hours of payment by going to the website Raising A Request section or calling the company registered phone number.
+                                   If a customer purchased Subscriptions/Memberships from multiple companies in our group of companies, the customer is eligible for a refund. You can request a refund within 48 hours of payment through the Raising A Request section of the website or by calling the company’s registered contact number.
                                 </p>
                             </div>
                         </div>
@@ -550,31 +550,12 @@ if(!function_exists('sendBrevoHtmlMail')){
             ];
         }
 
-        // Turn Data to JSON
-        $data_json = json_encode($data);
-
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.brevo.com/v3/smtp/email",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => $data_json,
-                CURLOPT_HTTPHEADER => [
-                    "Accept: application/json",
-                    "Content-Type: application/json",
-                    "api-key: ".config('constant.BREVO_API_KEY')
-                ],
-            )
-        );
-        $response = curl_exec($curl);
-
-        $err = curl_error($curl);
-
-        curl_close($curl);
+        $headers = [
+            "Accept" => "application/json",
+            "Content-Type" => "application/json",
+            "api-key" => config('constant.BREVO_API_KEY')
+        ];
+        commanCurlCall("https://api.brevo.com/v3/smtp/email", 'POST', $data, $headers);
 
         return true;
     }
@@ -607,31 +588,14 @@ if(!function_exists('sendBrevoHtmlMail2')){
             $data['attachment'] = $attachments;
         }
 
-        // Turn Data to JSON
-        $data_json = json_encode($data);
-
-        $curl = curl_init();
-        curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.brevo.com/v3/smtp/email",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => $data_json,
-                CURLOPT_HTTPHEADER => [
-                    "Accept: application/json",
-                    "Content-Type: application/json",
-                    "api-key: ".config('constant.BREVO_API_KEY')
-                ],
-            )
-        );
-        $response = curl_exec($curl);
-
-        $err = curl_error($curl);
-
-        curl_close(handle: $curl);
+        $headers = [
+            "Accept" => "application/json",
+            "Content-Type" => "application/json",
+            "api-key" => config('constant.BREVO_API_KEY')
+        ];
+        $response = commanCurlCall("https://api.brevo.com/v3/smtp/email", 'POST', $data, $headers);
+        Log::info('sendBrevoHtmlMail2 response : ' . json_encode($response['response'] ?? null));
+        Log::info('sendBrevoHtmlMail2 error : ' . ($response['error'] ?? ''));
 
         return true;
     }
@@ -739,12 +703,12 @@ if (!function_exists('assignAgentSelf')) {
 if(!function_exists('sendPaymentGreetings')){
     function sendPaymentGreetings($fullname, $mobile, $email){
         /*if($mobile != '') {
-            $smsmessage = "Dear Customer, Congratulations! Your loan application has been successfully submitted. Our Customer Executive will call you shortly. Thanks, Financercorp";
+            $smsmessage = "Dear Customer, Congratulations! Your loan application has been successfully submitted. Our Customer Executive will call you shortly. Thanks, MyMoneyLend";
             $smsresponse = sendtextSMSobb($mobile, $smsmessage, 'main');
         }*/
         if($email != '') {
             // Send email
-            $subject = "Welcome to Financercorp";
+            $subject = "Welcome to MyMoneyLend";
             $content = view('mail.simpleEmailTemplate',compact('fullname'))->render();
             if($content != '') {
                 $maildata = array(
@@ -763,7 +727,7 @@ if(!function_exists('sendPaymentGreetings')){
 if(!function_exists('sendForgetPassword')){
     function sendForgetPassword($fullname, $mobile, $email, $pswd){
         /*if($mobile != '') {
-            $smsmessage = "Dear Customer, Congratulations! Your loan application has been successfully submitted. Our Customer Executive will call you shortly. Thanks, Financercorp";
+            $smsmessage = "Dear Customer, Congratulations! Your loan application has been successfully submitted. Our Customer Executive will call you shortly. Thanks, MyMoneyLend";
             $smsresponse = sendtextSMSobb($mobile, $smsmessage, 'main');
         }*/
         if($email != '') {

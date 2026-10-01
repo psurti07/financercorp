@@ -171,21 +171,18 @@ if(!function_exists('formatePriceIndia')) {
 
 if (!function_exists('getPostalDetailsByPincode')) {
     function getPostalDetailsByPincode($pincode) {
-        $curl = curl_init(); 
-        curl_setopt_array($curl, [ 
-            CURLOPT_URL => 'https://geoloc.in/api/pincode',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POST => true,
-            CURLOPT_POSTFIELDS => json_encode(['pincode' => $pincode]),
-            CURLOPT_HTTPHEADER => [
-                'Content-Type: application/json',
-                'Authorization: Bearer '.config('constant.GEOLOC_KEY')
-            ],
-        ]);
-        $response = curl_exec($curl);
-        curl_close($curl);
+        $headers = [
+            'Content-Type' => 'application/json',
+            'Authorization' => 'Bearer '.config('constant.GEOLOC_KEY')
+        ];
+        $response = commanCurlCall(
+            'https://geoloc.in/api/pincode',
+            'POST',
+            ['pincode' => $pincode],
+            $headers
+        );
        
-        $data = json_decode($response);
+        $data = json_decode(json_encode($response['response'] ?? null));
         
         if ($data->status == "success") {
             return [
@@ -211,34 +208,14 @@ if(!function_exists('getpaymenturl')){
         $data_req1 = array(
             "request" => $data_base64
         );
-        $data_req2 = json_encode($data_req1);
+        $headers = [
+            "Content-Type" => "application/json",
+            "X-VERIFY" => $data_xvalue,
+            "accept" => "application/json"
+        ];
 
-        $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_URL => $peurl,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => "",
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 30,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS =>  $data_req2,
-            CURLOPT_HTTPHEADER => [
-                "Content-Type: application/json",
-                "X-VERIFY: ".$data_xvalue,
-                "accept: application/json"
-            ],
-        ]);
-        $response = curl_exec($curl);
-        $err = curl_error($curl);
-
-        curl_close($curl);
-
-        if ($err) {
-            return "cURL Error #:" . $err;
-        } else {
-            return json_decode($response);
-        }
+        $response = commanCurlCall($peurl, 'POST', $data_req1, $headers);
+        return json_decode(json_encode($response['response'] ?? null));
     }
 }
 

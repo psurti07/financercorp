@@ -10,32 +10,18 @@ use Illuminate\Support\Facades\Log;
                 'password' => config('constant.PAYGIC_PASSWORD')
             );
 
-            $url = curl_init();
-            curl_setopt_array($url, [
-                CURLOPT_URL => "https://server.paygic.in/api/v2/createMerchantToken",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => json_encode($auth),
-                CURLOPT_HTTPHEADER => [
-                    "accept: application/json",
-                    "content-type: application/json",
-                ]
-            ]);
+            $headers = [
+                "accept" => "application/json",
+                "Content-Type" => "application/json",
+            ];
 
-            $response = curl_exec($url);
-            $err = curl_error($url);
-            curl_close($url);
-            if ($err) {
-                return "cURL Error #:" . $err;
-            } else {
-
-                return json_decode($response, true);
-
-            }
+            $response = commanCurlCall(
+                "https://server.paygic.in/api/v2/createMerchantToken",
+                'POST',
+                $auth,
+                $headers
+            );
+            return $response['response'] ?? null;
 
         }
     }
@@ -44,26 +30,18 @@ use Illuminate\Support\Facades\Log;
         function createPaymentPage($data, $token)
         {
 
-            $url = curl_init();
-            curl_setopt_array($url, [
-                CURLOPT_URL => "https://server.paygic.in/api/v2/createPaymentPage",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => json_encode($data),
-                CURLOPT_HTTPHEADER => [
-                    "content-type: application/json",
-                    "token: $token",
-                ]
-            ]);
+            $headers = [
+                "Content-Type" => "application/json",
+                "token" => $token,
+            ];
 
-            $response = curl_exec($url);
-            $err = curl_error($url);
-            curl_close($url);
-            return $response;
+            $response = commanCurlCall(
+                "https://server.paygic.in/api/v2/createPaymentPage",
+                'POST',
+                $data,
+                $headers
+            );
+            return json_encode($response['response'] ?? null);
 
         }
     }
@@ -75,25 +53,17 @@ use Illuminate\Support\Facades\Log;
                 'mid' => config('constant.PAYGIC_MERCHANT_ID'),
                 'merchantReferenceId' =>$orderid
             );
-            $url = curl_init();
-            curl_setopt_array($url, [
-                CURLOPT_URL => "https://server.paygic.in/api/v2/checkPaymentStatus",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => json_encode($data),
-                CURLOPT_HTTPHEADER => [
-                    "content-type: application/json",
-                    "token: $token",
-                ]
-            ]);
+            $headers = [
+                "Content-Type" => "application/json",
+                "token" => $token,
+            ];
 
-            $response = curl_exec($url);
-            $err = curl_error($url);
-            curl_close($url);
-            return $response;
+            $response = commanCurlCall(
+                "https://server.paygic.in/api/v2/checkPaymentStatus",
+                'POST',
+                $data,
+                $headers
+            );
+            return json_encode($response['response'] ?? null);
         }
     }
