@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LegalController;
 use App\Http\Controllers\SelfApplyController;
 use App\Http\Controllers\CalculatorsController;
+use App\Http\Controllers\LoanAgentController;
 use App\Http\Controllers\ScheduleSlotController;
 use App\Http\Controllers\WebinarStepsController;
 
@@ -14,8 +15,8 @@ Route::group([
 ], function () {
     Route::get('/', [HomeController::class, 'home'])->name('home');
     Route::get('/company', [HomeController::class, 'company'])->name('company');
-    Route::get('/self-apply', [HomeController::class, 'selfApply'])->name('self.apply');
-    // Route::get('/loan-agent', [HomeController::class, 'loanAgent'])->name('loan.agent');
+    // Route::get('/self-apply', [HomeController::class, 'selfApply'])->name('self.apply');
+    Route::get('/loan-agent', [HomeController::class, 'loanAgent'])->name('loan.agent');
     Route::get('/emi-calculator', [HomeController::class, 'emiCalculator'])->name('emi.calculator');
     Route::get('/career', [HomeController::class, 'career'])->name('career');
     Route::get('/apply-career/{code}', [HomeController::class, 'applycareer'])->name('apply-career');
@@ -82,50 +83,72 @@ Route::group([
     Route::post('/standard-offer-response', [SelfApplyController::class, 'standardOfferResponse'])->name('standard-offer.response');
 });
 
-// Route::group([
-//     'prefix' => '/loan-agent',
-//     'as' => 'loan.agent.'
-// ], function () {
 
-//     Route::get('/', [LoanAgentController::class, 'main'])->name('main');
-//     Route::post('/send-otp', [LoanAgentController::class, 'sendOtp'])->name('send.otp');
-//     Route::post('/verify-otp', [LoanAgentController::class, 'verifyOtp'])->name('verify.otp');
-//     Route::get('/loan-details', [LoanAgentController::class, 'loanDetails'])->name('loan.details');
-//     Route::post('/loan-details-store', [LoanAgentController::class, 'loanDetailStore'])->name('loan.details.store');
-//     Route::get('/personal-details', [LoanAgentController::class, 'personalDetails'])->middleware('verifyApplied')->name('personal.details');
-//     Route::post('/postal-details', [LoanAgentController::class, 'postalDetails'])->middleware('verifyApplied')->name('postal.details');
-//     Route::post('/personal-details-store', [LoanAgentController::class, 'personalDetailStore'])->name('personal.details.store');
-//     Route::get('/get-best-offers', [LoanAgentController::class, 'getOffers'])->middleware('verifyApplied')->name('get.offers');
-//     Route::get('/buy-now', [LoanAgentController::class, 'buyNow'])->middleware('verifyApplied')->name('buyNow');
-//     Route::get('/callbackUrl', [LoanAgentController::class, 'callbackUrl'])->middleware('verifyApplied')->name('callbackUrl');
-//     Route::get('/paymentFailed', [LoanAgentController::class, 'paymentFailed'])->middleware('verifyApplied')->name('payment.failed');
-//     Route::get('/paymentSuccess', [LoanAgentController::class, 'paymentSuccess'])/*->middleware('verifyApplied')*/->name('payment.success');
-//     Route::post('/checkout', [LoanAgentController::class, 'checkout'])->name('checkout');
+Route::group([
+    'prefix' => '/agent',
+    'as' => 'loan.agent.'
+], function () {
+    Route::get('/', [LoanAgentController::class, 'main'])->name('main');
+    Route::post('/send-otp', [LoanAgentController::class, 'sendOtp'])->name('send.otp');
+    Route::post('/verify-otp', [LoanAgentController::class, 'verifyOtp'])->name('verify.otp');
+    Route::get('/income-details', [LoanAgentController::class, 'loanDetails'])->name('loan.details');
+    Route::post('/income-details-store', [LoanAgentController::class, 'loanDetailStore'])->name('loan.details.store');
+    Route::get('/personal-details', [LoanAgentController::class, 'personalDetails'])->middleware('verifyApplied')->name('personal.details');
+    Route::post('/postal-details', [LoanAgentController::class, 'postalDetails'])->middleware('verifyApplied')->name('postal.details');
+    Route::post('/personal-details-store', [LoanAgentController::class, 'personalDetailStore'])->name('personal.details.store');
+    Route::get('/get-best-offers', [LoanAgentController::class, 'getOffers'])->middleware('verifyApplied')->name('get.offers');
+    Route::get('/buy-now', [LoanAgentController::class, 'buyNow'])->middleware('verifyApplied')->name('buyNow');
+    Route::get('/callbackUrl', [LoanAgentController::class, 'callbackUrl'])->middleware('verifyApplied')->name('callbackUrl');
+    Route::get('/paymentFailed', [LoanAgentController::class, 'paymentFailed'])->middleware('verifyApplied')->name('payment.failed');
+    Route::get('/paymentSuccess', [LoanAgentController::class, 'paymentSuccess'])/*->middleware('verifyApplied')*/->name('payment.success');
+    Route::post('/checkout', [LoanAgentController::class, 'checkout'])->name('checkout');
 
-//     Route::get('great-deal-offer', [LoanAgentController::class, 'greatDealOffer'])->name('great-deal.offer');
-//     Route::post('great-deal-offer', [LoanAgentController::class, 'submitGreatDealOffer'])->name('great-deal-offer.submit');
-//     Route::post('great-deal-offer-response', [LoanAgentController::class, 'greatDealOfferResponse'])->name('great-deal-offer.response');
+});
 
-//     Route::get('elite-offer', [LoanAgentController::class, 'eliteOffer'])->name('elite.offer');
-//     Route::post('elite-offer', [LoanAgentController::class, 'submitEliteOffer'])->name('elite-offer.submit');
-//     Route::post('elite-offer-response', [LoanAgentController::class, 'eliteOfferResponse'])->name('elite-offer.response');
+Route::group([
+    'prefix' => '/loan-agent',
+    'as' => 'loan.agent.'
+], function () {
 
-//     Route::get('ultra-saver-offer', [LoanAgentController::class, 'ultraSaverOffer'])->name('ultra-saver.offer');
-//     Route::post('ultra-saver-offer', [LoanAgentController::class, 'submitUltraSaverOffer'])->name('ultra-saver-offer.submit');
-//     Route::post('ultra-saver-offer-response', [LoanAgentController::class, 'ultraSaverOfferResponse'])->name('ultra-saver-offer.response');
+    // Route::get('/', [LoanAgentController::class, 'main'])->name('main');
+    // Route::post('/send-otp', [LoanAgentController::class, 'sendOtp'])->name('send.otp');
+    // Route::post('/verify-otp', [LoanAgentController::class, 'verifyOtp'])->name('verify.otp');
+    // Route::get('/loan-details', [LoanAgentController::class, 'loanDetails'])->name('loan.details');
+    // Route::post('/loan-details-store', [LoanAgentController::class, 'loanDetailStore'])->name('loan.details.store');
+    // Route::get('/personal-details', [LoanAgentController::class, 'personalDetails'])->middleware('verifyApplied')->name('personal.details');
+    // Route::post('/postal-details', [LoanAgentController::class, 'postalDetails'])->middleware('verifyApplied')->name('postal.details');
+    // Route::post('/personal-details-store', [LoanAgentController::class, 'personalDetailStore'])->name('personal.details.store');
+    // Route::get('/get-best-offers', [LoanAgentController::class, 'getOffers'])->middleware('verifyApplied')->name('get.offers');
+    // Route::get('/buy-now', [LoanAgentController::class, 'buyNow'])->middleware('verifyApplied')->name('buyNow');
+    // Route::get('/callbackUrl', [LoanAgentController::class, 'callbackUrl'])->middleware('verifyApplied')->name('callbackUrl');
+    // Route::get('/paymentFailed', [LoanAgentController::class, 'paymentFailed'])->middleware('verifyApplied')->name('payment.failed');
+    // Route::get('/paymentSuccess', [LoanAgentController::class, 'paymentSuccess'])/*->middleware('verifyApplied')*/->name('payment.success');
+    // Route::post('/checkout', [LoanAgentController::class, 'checkout'])->name('checkout');
 
-//     Route::get('big-offer', [LoanAgentController::class, 'bigOffer'])->name('big.offer');
-//     Route::post('big-offer', [LoanAgentController::class, 'submitBigOffer'])->name('big-offer.submit');
-//     Route::post('big-offer-response', [LoanAgentController::class, 'bigOfferResponse'])->name('big-offer.response');
+    Route::get('great-deal-offer', [LoanAgentController::class, 'greatDealOffer'])->name('great-deal.offer');
+    Route::post('great-deal-offer', [LoanAgentController::class, 'submitGreatDealOffer'])->name('great-deal-offer.submit');
+    Route::post('great-deal-offer-response', [LoanAgentController::class, 'greatDealOfferResponse'])->name('great-deal-offer.response');
 
-//     Route::get('big-benefit-offer', [LoanAgentController::class, 'bigBenefitOffer'])->name('big-benefit.offer');
-//     Route::post('big-benefit-offer', [LoanAgentController::class, 'submitBigBenefitOffer'])->name('big-benefit-offer.submit');
-//     Route::post('big-benefit-offer-response', [LoanAgentController::class, 'bigBenefitOfferResponse'])->name('big-benefit-offer.response');
+    Route::get('elite-offer', [LoanAgentController::class, 'eliteOffer'])->name('elite.offer');
+    Route::post('elite-offer', [LoanAgentController::class, 'submitEliteOffer'])->name('elite-offer.submit');
+    Route::post('elite-offer-response', [LoanAgentController::class, 'eliteOfferResponse'])->name('elite-offer.response');
 
-//     Route::get('silver-offer', [LoanAgentController::class, 'silverOffer'])->name('silver.offer');
-//     Route::post('silver-offer', [LoanAgentController::class, 'submitSilverOffer'])->name('silver-offer.submit');
-//     Route::post('silver-offer-response', [LoanAgentController::class, 'silverOfferResponse'])->name('silver-offer.response');
-// });
+    Route::get('ultra-saver-offer', [LoanAgentController::class, 'ultraSaverOffer'])->name('ultra-saver.offer');
+    Route::post('ultra-saver-offer', [LoanAgentController::class, 'submitUltraSaverOffer'])->name('ultra-saver-offer.submit');
+    Route::post('ultra-saver-offer-response', [LoanAgentController::class, 'ultraSaverOfferResponse'])->name('ultra-saver-offer.response');
+
+    Route::get('big-offer', [LoanAgentController::class, 'bigOffer'])->name('big.offer');
+    Route::post('big-offer', [LoanAgentController::class, 'submitBigOffer'])->name('big-offer.submit');
+    Route::post('big-offer-response', [LoanAgentController::class, 'bigOfferResponse'])->name('big-offer.response');
+
+    Route::get('big-benefit-offer', [LoanAgentController::class, 'bigBenefitOffer'])->name('big-benefit.offer');
+    Route::post('big-benefit-offer', [LoanAgentController::class, 'submitBigBenefitOffer'])->name('big-benefit-offer.submit');
+    Route::post('big-benefit-offer-response', [LoanAgentController::class, 'bigBenefitOfferResponse'])->name('big-benefit-offer.response');
+
+    Route::get('silver-offer', [LoanAgentController::class, 'silverOffer'])->name('silver.offer');
+    Route::post('silver-offer', [LoanAgentController::class, 'submitSilverOffer'])->name('silver-offer.submit');
+    Route::post('silver-offer-response', [LoanAgentController::class, 'silverOfferResponse'])->name('silver-offer.response');
+});
 
 
 Route::get('/application-pdf/{userid}', [HomeController::class, 'showPdf']);

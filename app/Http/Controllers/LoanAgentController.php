@@ -814,13 +814,13 @@ class LoanAgentController extends Controller
                     $api_response = sendOrderData(json_encode($remote_data));
                 }
                 if ($response2 > 0) {
-                    $redRoute = 'loan-agent/paymentSuccess'; // Row was updated
+                    $redRoute = 'agent/paymentSuccess'; // Row was updated
                 } else {
-                    $redRoute = 'loan-agent/paymentFailed'; // No rows were updated
+                    $redRoute = 'agent/paymentFailed'; // No rows were updated
                 }
                 return redirect($redRoute);
             } else {
-                return redirect("loan-agent/paymentFailed");
+                return redirect("agent/paymentFailed");
             }
         } catch (\Exception $e) {
             Log::error('loan agent buydigital checkout method error occured: ' . $e->getMessage());
@@ -898,7 +898,7 @@ class LoanAgentController extends Controller
                         'zip' => $userData->pincode,
                         'orderid' => $orderId,
                         'odamount' => $orderData->orderamount,
-                        'sourceurl' => 'https://financercorp.com/loan-agent/paymentSuccess'
+                        'sourceurl' => 'https://financercorp.com/agent/paymentSuccess'
                     );
 
                     if ($fbleads) {

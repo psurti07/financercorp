@@ -181,7 +181,7 @@ if (!function_exists('raiseRequestFaqs')) {
                         <div class="accordion-panel-item">
                             <div class="faqs-2-answer">
                                 <p>
-                                    Please read the terms and conditions to get a clear understanding of what a pre-approval loan offer is.<a href="' . route('self.apply.main') . '">Click here.</a>
+                                    Please read the terms and conditions to get a clear understanding of what a pre-approval loan offer is.<a href="' . route('loan.agent.main') . '">Click here.</a>
                                 </p>
                             </div>
                         </div>
