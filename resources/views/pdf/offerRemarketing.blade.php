@@ -360,7 +360,7 @@
                                                                                                 margin-top: 25px;
                                                                                                 display: block;
                                                                                             ">
-                                                                                        <a href="{{ $userData->acc_type==1?'https://financercorp.com/self-apply':'https://financercorp.com/loan-agent' }}" style="
+                                                                                        <a href="{{ $userData->acc_type==1?'https://financercorp.com/self-apply':'https://financercorp.com/agent' }}" style="
                                                                                                     background-color: #48a111;
                                                                                                     color: #fff;
                                                                                                     font-family: Poppins, sans-serif;

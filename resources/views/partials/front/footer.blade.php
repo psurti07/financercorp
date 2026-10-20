@@ -1,5 +1,5 @@
-<footer id="footer-3" class="pt-80 footer">
-    <div class="container">
+<footer id="footer-3" class="pt-80 bg--green-100 mb-20">
+    <div class="p-60">
         <!-- FOOTER CONTENT -->
         <div class="row">
             <!-- FOOTER LOGO -->
@@ -7,7 +7,7 @@
                 <div class="footer-info">
                     <img class="footer-logo" src="{{ asset('front/images/logo/logo-w.png') }}" alt="{{ config('constant.APP_NAME') }}" />
                     <div class="fs-6 mt-3 mb-5 text-light">
-                        <p>Financer Corp is one of India’s thriving financial consultation and services companies. We help individuals in meeting their financial needs by offering personalized, expert-led financial consultation and services.</p>
+                        <p>Financer Corp is one of India’s thriving financial consultation and services companies. We help individuals in meeting their financial needs by offering personalized, expert-led financial consultation and services. </p>
                     </div>
                     <ul class="footer-socials mt-4 ico-25 text-center clearfix">
                         <li>
@@ -39,7 +39,7 @@
                     <!-- Title -->
                     <h6 class="s-17 w-700 text-light">Company</h6>
                     <!-- Links -->
-                    <ul class="foo-links clearfix">
+                    <ul class="foo-links clearfix color--white">
                         <li>
                             <p><a href="{{ route('front.home') }}#company">Company</a></p>
                         </li>
@@ -55,9 +55,9 @@
                         <li>
                             <p><a href="{{ route('front.home') }}#contact">Contact Us</a></p>
                         </li>
-                        <li>
+                        {{-- <li>
                             <p><a href="{{ route('webinar.index') }}" >Webinar</a></p>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     <!-- Title -->
                     <h6 class="s-17 w-700 text-light">Legal</h6>
                     <!-- Links -->
-                    <ul class="foo-links clearfix">
+                    <ul class="foo-links clearfix color--white">
                         <li>
                             <p><a href="{{ route('front.raise.request') }}">Raise Request</a></p>
                         </li>

@@ -245,7 +245,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="separator separator-dashed"></div>
+                                {{-- <div class="separator separator-dashed"></div>
                                 <div class="py-1">
                                     <div class="py-3 d-flex flex-stack flex-wrap">
                                         <div class="d-flex align-items-center collapsible toggle collapsed" data-bs-toggle="collapse" data-bs-target="#kt_create_new_payment_method_2" aria-expanded="false">
@@ -291,7 +291,7 @@
                                             </table>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

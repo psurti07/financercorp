@@ -122,3 +122,212 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
   letter-spacing: 1px;
 }
+
+.career-form .form-control {
+    background: transparent;
+}
+
+
+.loan-type-options .loan-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 36px 12px 15px;
+  margin: 0;
+  border: 1px solid #e0e7ef;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all .2s ease;
+  box-sizing: border-box;
+}
+
+.loan-type-options .loan-card .plan-type {
+  color: #10243b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Hide native radio controls */
+.loan-type-options input[type="radio"],
+.employment-options input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Custom loan radio circle */
+.loan-type-options .loan-card::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #a5b4c7;
+  border-radius: 50%;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+.loan-type-options .loan-picker input:checked+.loan-card::after {
+  border: 4px solid #48A111;
+}
+
+/* Selected loan */
+.loan-type-options .loan-picker input:checked+.loan-card {
+  border-color: #48A111;
+  background: #48A11114;
+}
+
+/* Employment cards */
+.employment-options .employment-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 62px;
+  padding: 9px 12px;
+  margin: 0;
+  border: 1px solid #e0e7ef;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all .2s ease;
+}
+
+.employment-options .employment-picker input:checked+.employment-card {
+  border-color: #48A111;
+  background: #f5fffc;
+}
+
+/* Employment icons */
+.employment-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: #48A111;
+}
+
+.employment-icon img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Employment labels */
+.employment-details {
+  display: block;
+  min-width: 0;
+  margin-left: 10px;
+}
+
+.employment-details .plan-type {
+  display: block;
+  color: #10243b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.employment-details .plan-subtitle {
+  display: block;
+  margin-top: 1px;
+  color: #718096;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.loan-picker,
+.employment-picker {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.loan-section-title {
+  display: block;
+  margin-bottom: 8px;
+  color: #45564e;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Keyboard accessibility */
+.loan-type-options input:focus-visible+.loan-card,
+.employment-options input:focus-visible+.employment-card {
+  outline: 2px solid #48A111;
+  outline-offset: 2px;
+}
+
+@media (max-width: 575.98px) {
+  .loan-type-options .loan-card {
+    padding-left: 10px;
+    padding-right: 27px;
+  }
+
+  .loan-type-options .loan-card .plan-type {
+    font-size: 14px;
+  }
+
+  .loan-type-options .loan-card::after {
+    right: 9px;
+  }
+
+  .employment-options .employment-card {
+    padding: 8px;
+  }
+
+  .employment-details {
+    margin-left: 8px;
+  }
+
+  .employment-details .plan-type {
+    font-size: 12px;
+  }
+
+  .employment-details .plan-subtitle {
+    font-size: 9px;
+  }
+}
+
+
+.mobile-input {
+  height: 58px;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.mobile-input .form-control {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #46546b;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.mobile-input .form-control::placeholder {
+  color: #46546b;
+  opacity: 1;
+}
+
+.mobile-input:focus-within {
+  border-color: #002e60;
+}

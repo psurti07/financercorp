@@ -1,8 +1,8 @@
-<footer id="footer-3" class="footer">
+<footer id="footer-3" class="bg--green-100">
     <div class="container">
         <div class="bottom-footer text-center">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center mb-20">
                     <div class="footer-copyright">
                         <p><span class="text-light">{{ date('Y') }} &copy; {{ config('constant.COMPANY_NAME') }} All Rights Reserved.</span></p>
                     </div>

@@ -94,7 +94,7 @@
                     </div>
                     <!-- Form Submit Button -->
                     <div class="col-md-12">
-                      <button type="submit" class="btn btn--theme hover--theme submit btn-login mt-0">Log In</button>
+                      <button type="submit" class="btn btn--theme hover--tra-black submit btn-login mt-0">Log In</button>
                     </div>
                     <!-- Sign Up Link -->
                     <div class="col-md-12">
