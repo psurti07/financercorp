@@ -94,11 +94,11 @@
                     </div>
                     <!-- Form Submit Button -->
                     <div class="col-md-12">
-                      <button type="submit" class="btn btn--theme hover--tra-black submit btn-login mt-0">Log In</button>
+                      <button type="submit" class="btn btn--theme hover--tra-black submit btn-login mt-0 r-100">Log In</button>
                     </div>
                     <!-- Sign Up Link -->
                     <div class="col-md-12">
-                      <p class="create-account text-center">
+                      <p class="create-account text-center mt-0">
                         Don't have an account? <a href="{{ route('loan.agent.main') }}" class="color--theme">Sign up</a>
                       </p>
                     </div>
@@ -113,9 +113,9 @@
                   </div>
               </div>
             </div>
-			 		</div>	  <!-- End row -->	
-			 	</div> <!-- End container -->		
-			</div>	<!-- END LOGIN PAGE -->
+			 		</div>	   
+			 	</div>  
+			</div> 
 	 </div>
 
   <script src="{{ asset('front/js/jquery-3.7.0.min.js') }}"></script>

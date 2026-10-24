@@ -40,14 +40,10 @@ $(".testimonials-carousel").owlCarousel({
     autoplayHoverPause: true,
     smartSpeed: 1500,
     responsive: {
-        0: {
-            items: 1 // Show 1 item on small screens
-        },
-        600: {
-            items: 2 // Show 2 items on medium screens
-        },
-        1000: {
-            items: 3 // Show 3 items on large screens
-        }
+          0: { items: 1 },
+            767: { items: 1 },
+            768: { items: 2 },
+            991: { items: 3 },
+            1000: { items: 3 }
     }
 });

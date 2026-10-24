@@ -1,6 +1,6 @@
 <!-- Testimonials carousel start  -->
 <div class="owl-carousel owl-theme testimonials-carousel">
-    <div class="review-1 border r-08 bg--yellow-100">
+    <div class="review-1 border r-10 bg--yellow-100 shadow-sm">
         <div class="review-txt pt-30">
             <div class="star-rating ico-15">
                 <span class="flaticon-star"></span>
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="review-1 border r-08 bg--yellow-100">
+    <div class="review-1 border r-10 bg--yellow-100 shadow-sm">
         <div class="review-txt pt-30">
             <div class="star-rating ico-15">
                 <span class="flaticon-star"></span>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="review-1 border r-08 bg--yellow-100">
+    <div class="review-1 border r-10 bg--yellow-100 shadow-sm">
         <div class="review-txt pt-30">
             <div class="star-rating ico-15">
                 <span class="flaticon-star"></span>
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    <div class="review-1 border r-08 bg--yellow-100">
+    <div class="review-1 border r-10 bg--yellow-100 shadow-sm">
         <div class="review-txt pt-30">
             <div class="star-rating ico-15">
                 <span class="flaticon-star"></span>

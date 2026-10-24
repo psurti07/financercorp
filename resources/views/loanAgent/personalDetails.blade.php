@@ -1,5 +1,6 @@
 @extends('layouts.selfapply')
 @push('css')
+    <link href="{{ asset('front/css/custom.css') }}" rel="stylesheet" type="text/css" />
     <style>
         .accordion-button {
             background-color: transparent !important;
@@ -24,7 +25,7 @@
                         <div class="accordion accordion-flush mb-10" id="accordionFlushExample">
                             <div class="accordion-item bg-transparent">
                                 <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button color--grey text-uppercase" type="button"
+                                    <button class="accordion-button color--dark text-uppercase" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
                                         aria-controls="flush-collapseOne">
                                         User Details
@@ -32,12 +33,12 @@
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body bg--white-100 r-18 p-0 mt-2">
-                                        <div class="d-flex justify-content-between px-3 py-1">
+                                    <div class="accordion-body bg--white-100 r-18 p-0 mt-2 border">
+                                        <div class="d-flex justify-content-between px-3 py-1 border-bottom">
                                             <p class="s-14 mb-0">Mobile :</p>
                                             <p class="s-14 mb-0">{{ Cookie::get('user_mobile') }}</p>
                                         </div>
-                                        <hr class="divider">
+                                   
                                         <div class="d-flex justify-content-between px-3 pb-2">
                                             <p class="s-14 mb-0">Loan Amount :</p>
                                             <p class="s-14 mb-0">
@@ -52,7 +53,7 @@
 
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico text-white bg--green-100 border border-green">
+                                    <div class="cbox-12-ico text-white bg--green-400 border border-green">
                                         <span class="fbox-ico ico-9 lh-1"> <span
                                                 class="flaticon-check ms-0 color--white lh-1"></span></span>
                                     </div>
@@ -63,8 +64,8 @@
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico border-success"><span class="fbox-ico ico-9 lh-1"> <span
-                                                class="flaticon-right-arrow ms-0 color--green-300 lh-1"></span></span></div>
+                                    <div class="cbox-12-ico border-dark"><span class="fbox-ico ico-9 lh-1"> <span
+                                                class="flaticon-right-arrow ms-0 color-dark lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
                                     <p class="s-11  mb-0">Personal Details</p>
@@ -72,7 +73,7 @@
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico border-dark-subtle bg--white"><span class="fbox-ico ico-9 lh-1">
+                                    <div class="cbox-12-ico border-dark-subtle bg-white"><span class="fbox-ico ico-9 lh-1">
                                             <span class="flaticon-right-arrow ms-0  lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
@@ -81,7 +82,7 @@
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico border-dark-subtle bg--white"><span class="fbox-ico ico-9 lh-1">
+                                    <div class="cbox-12-ico border-dark-subtle bg-white"><span class="fbox-ico ico-9 lh-1">
                                             <span class="flaticon-right-arrow ms-0  lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
@@ -90,7 +91,7 @@
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico border-dark-subtle bg--white"><span class="fbox-ico ico-9 lh-1">
+                                    <div class="cbox-12-ico border-dark-subtle bg-white"><span class="fbox-ico ico-9 lh-1">
                                             <span class="flaticon-right-arrow ms-0  lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
@@ -100,7 +101,7 @@
                         </div>
                     </div>
                     <div class="img-block mt-20">
-                        <img src="{{ asset('front/images/details-img.png') }}" alt="login now" class="p-0 w-100">
+                        <img src="{{ asset('front/images/digital-img.png') }}" alt="login now" class="p-0 w-100">
                     </div>
                 </div>
 
@@ -115,12 +116,12 @@
 
                                     <div class="fbox-ico d-flex align-items-start justify-content-start">
                                         <div>
-                                            <div class="shape-ico color--white bg--green-400 p-10 pb-0 rounded-3">
-                                                <span class="flaticon-briefcase"></span>
+                                            <div class="shape-ico color--white bg--green-400 p-10 pb-0 rounded-3 details-icon d-flex align-items-center justify-content-center">
+                                                <span class="flaticon-file"></span>
                                             </div>
                                         </div>
                                         <div class="fbox-txt ms-3">
-                                            <h4 class="mb-10 w-700 d-block">Personal Details</h4>
+                                            <h4 class="mb-0 w-700 d-block">Personal Details</h4>
                                             <p class="mt-1 color--grey">For Our Experts To Analyze Your Loan Requirements.</p>
                                         </div>
                                     </div>

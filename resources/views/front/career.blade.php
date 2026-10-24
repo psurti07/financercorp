@@ -61,11 +61,11 @@
                 </div>
             </div>
             <div class="fbox-wrapper">
-                <div class="row row-cols-1 row-cols-md-2 rows-2 gx-2 gy-2">
+                <div class="row row-cols-1 row-cols-md-2 rows-2 g-3">
                     <div class="col">
-                        <div class="fbox-8">
+                        <div class="fbox-8 r-16 h-100">
                             <div class="fbox-ico-wrap">
-                                <div class="fbox-ico ico-50">
+                                <div class="fbox-ico ico-30">
                                     <div class="shape-ico">
                                         <span class="flaticon-profits color--theme"></span>
                                     </div>
@@ -78,9 +78,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="fbox-8">
+                        <div class="fbox-8 r-16 h-100">
                             <div class="fbox-ico-wrap">
-                                <div class="fbox-ico ico-50">
+                                <div class="fbox-ico ico-30">
                                     <div class="shape-ico">
                                         <span class="flaticon-workflow-2 color--theme"></span>
                                     </div>
@@ -93,9 +93,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="fbox-8">
+                        <div class="fbox-8 r-16 h-100">
                             <div class="fbox-ico-wrap">
-                                <div class="fbox-ico ico-50">
+                                <div class="fbox-ico ico-30">
                                     <div class="shape-ico">
                                         <span class="flaticon-prioritize color--theme"></span>
                                     </div>
@@ -108,9 +108,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="fbox-8">
+                        <div class="fbox-8 r-16 h-100">
                             <div class="fbox-ico-wrap">
-                                <div class="fbox-ico ico-50">
+                                <div class="fbox-ico ico-30">
                                     <div class="shape-ico">
                                         <span class="flaticon-money color--theme"></span>
                                     </div>
@@ -123,9 +123,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="fbox-8">
+                        <div class="fbox-8 r-16 h-100">
                             <div class="fbox-ico-wrap">
-                                <div class="fbox-ico ico-50">
+                                <div class="fbox-ico ico-30">
                                     <div class="shape-ico">
                                         <span class="flaticon-fast-food color--theme"></span>
                                     </div>
@@ -138,9 +138,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="fbox-8">
+                        <div class="fbox-8 r-16 h-100">
                             <div class="fbox-ico-wrap">
-                                <div class="fbox-ico ico-50">
+                                <div class="fbox-ico ico-30">
                                     <div class="shape-ico">
                                         <span class="flaticon-diamond color--theme"></span>
                                     </div>

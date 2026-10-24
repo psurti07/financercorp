@@ -14,73 +14,73 @@
 
                 <div class="col-md-12 col-lg-6 col-12">
                     <div class="hero-7-txt mb-4">
-                        <span class="color--blue-500 text-uppercase mb-2 d-block">RBI-aligned NBFC marketplace</span>
+                        <span class="color--blue-500 text-uppercase mb-2 d-block s-10">RBI-aligned NBFC marketplace</span>
                         <h1 class="w-700 color--white mb-3">Experience the Best Financial Consultation and Services<span
                                 class="color--blue-500"> At Your Fingertips</span></h1>
                         <p class=" color--white mb-4">Achieve your financial goals in a smarter way with premier financial
                             services from industry experts.</p>
                         {{-- <a href="{{ route('self.apply.main') }}"
-                         class="btn r-04 btn--theme hover--tra-black last-link me-2 mb-md-0 mb-0">Self
+                         class="btn r-04 btn--theme hover--tra-white last-link me-2 mb-md-0 mb-0">Self
                          Apply</a> --}}
                         <a href="{{ route('loan.agent.main') }}"
-                            class="btn r-04 btn--theme hover--tra-black rounded-pill last-link">Hire
+                            class="btn r-04 btn--theme hover--tra-white rounded-pill last-link">Hire
                             an Agent</a>
                     </div>
-                    <hr class="divider">
-                    <div class="statistic-5-wrapper mt-4">
-                        <div class="row row-cols-2 row-cols-md-4">
-                            <div class="col sec-1 staticts-1">
-                                <div id="sb-5-1" class="text-center mb-4">
-                                    <div class="statistic-block">
+                   
+                    <div class="statistic-5-wrapper mt-4 counter-border">
+                        <div class="row row-cols-2 row-cols-md-4 g-2">
+                            <div class="col sec-1 staticts-1 staticts-1">
+                                <div id="sb-5-1" class="text-center mb-40">
+                                    <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
                                                 <span class="count-element">4500</span>+
                                             </h4>
                                         </div>
                                         <div class="statistic-txt">
-                                            <h5 class="s-15 w-500 color--grey">Happy Customer</h5>
+                                            <p class="s-11 w-500 color--grey text-uppercase">Happy Customer</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col sec-2 staticts-1 staticts-border">
-                                <div id="sb-5-3" class="text-center mb-4">
-                                    <div class="statistic-block">
+                            <div class="col sec-2 staticts-1 staticts-border mt-0">
+                                <div id="sb-5-3" class="text-center mb-40">
+                                    <div class="statistic-block ttext-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
                                                 <span class="count-element">4</span>5Cr+
                                             </h4>
                                         </div>
                                         <div class="statistic-txt">
-                                            <h5 class="s-15 w-500 color--grey">Successful Disbursals </h5>
+                                            <p class="s-11 w-500 color--grey text-uppercase">Successful Disbursals </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col sec-3 staticts-1 staticts-border-top">
-                                <div id="sb-5-2" class="text-center mb-4">
-                                    <div class="statistic-block">
+                            <div class="col sec-3 staticts-1 staticts-border-top mt-0">
+                                <div id="sb-5-2" class="text-center mb-40">
+                                    <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
                                                 <span class="count-element">8</span>+
                                             </h4>
                                         </div>
                                         <div class="statistic-txt">
-                                            <h5 class="s-15 w-500 color--grey">NBFC Partners</h5>
+                                            <p class="s-11 w-500 color--grey text-uppercase">NBFC Partners</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col sec-4 staticts-1">
-                                <div id="sb-5-4" class="text-center mb-4">
-                                    <div class="statistic-block">
+                                <div id="sb-5-4" class="text-center mb-40">
+                                    <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
                                                 <span class="count-element">100</span>%
                                             </h4>
                                         </div>
                                         <div class="statistic-txt">
-                                            <h5 class="s-15 w-500 color--grey">Digital Process</h5>
+                                            <p class="s-11 w-500 color--grey text-uppercase">Digital Process</p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,47 +89,8 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6 col-12 m-auto mt-lg-0 mt-4">
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-12 m-auto">
-                        <div class="position-relative">
-                            <div class="bg--yellow-100 r-16 p-30 block-shadow">
-                                <div class="d-flex align-items-center justify-content-between flex-wrap mb-20">
-                                    <span class="badge bg--green-100 color--green-500 r-100 py-10 px-15">
-                                        Sanction Preview
-                                    </span>
-                                </div>
-
-                                <!-- Loan Amount -->
-                                <h2 class="s-32 w-700 mb-5">
-                                    ₹29,40,000
-                                </h2>
-
-                                <p class="s-14 mb-20">
-                                    Estimated eligible loan amount
-                                </p>
-
-                                <!-- Loan Details -->
-                                <div class="d-flex justify-content-between align-items-center mb-10">
-                                    <span>Monthly instalment</span>
-                                    <span class="w-600">₹64,658</span>
-                                </div>
-
-                                <div class="d-flex justify-content-between align-items-center mb-10">
-                                    <span>Interest rate</span>
-                                    <span class="w-600">11.5% p.a.</span>
-                                </div>
-
-                                <div class="d-flex justify-content-between align-items-center mb-20">
-                                    <span>Tenure</span>
-                                    <span class="w-600">60 months</span>
-                                </div>
-
-                                <!-- Button -->
-                                <a href="#Calculate" class="btn btn--green-500 btn-sm r-100 w-100 text-center">
-                                    Run Your Numbers
-                                </a>
-
-                            </div>
-                        </div>
+                 <div class="home-img text-center">
+                        <img src="{{ asset('front/images/home-1.png') }}" alt="wisemudra" class="img-fluid r-20 p-0">
                     </div>
                 </div>
             </div>
@@ -139,10 +100,10 @@
     <section class="py-80 content-section division bg--yellow-100" id="company">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 pe-lg-40 border-end">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 pe-lg-40 company-left-content">
                     <h6 class="s-14 txt-upcase mb-20">About Financer Corp</h6>
-                    <div class="border-start border-3 border-success ps-3 mb-20">
-                        <p class="s-18 mb-0">
+                    <div class="mb-20 quote">
+                        <p class="s-18 mb-0 text-dark">
                             At Financer Corp, we are committed to making financial solutions more accessible, reliable, and
                             convenient for individuals across India. Backed by enriching partnerships with multiple
                             industry-leading NBFCs, we offer premier financial consultation and services designed to match
@@ -150,13 +111,13 @@
                         </p>
                     </div>
 
-                    <p class="s-14 color--grey mb-15">
+                    <p class="s-15 color--coal mb-15">
                         Our focus is on understanding what works best for each individual and guiding them with personalized
                         support at every step. With a team of seasoned experts and our streamlined digital portal, we help
                         people make sound financial decisions and move forward with more confidence and clarity.
                     </p>
 
-                    <p class="s-14 color--grey mb-0">
+                    <p class="s-15 color--coal mb-0">
                         Customer satisfaction remains at the heart of everything we do. Through this customer-first
                         approach, we ensure every individual receives the experience and services they look for while
                         fulfilling their financial goals with ease.
@@ -172,7 +133,7 @@
                     <ul class="list-unstyled mb-0">
                         <li class="d-flex align-items-start mb-15">
                             <span class="color--green-500 me-3">●</span>
-                            <span class="s-14 color--grey mb-0">
+                            <span class="s-15 color--coal mb-0">
                                 <strong class="color--black">No cookie-cutter solutions.</strong>
                                 We take time to understand each person's situation
                                 before recommending a lender.
@@ -181,7 +142,7 @@
 
                         <li class="d-flex align-items-start mb-15">
                             <span class="color--green-500 me-3">●</span>
-                            <span class="s-14 color--grey mb-0">
+                            <span class="s-15 color--coal mb-0">
                                 <strong class="color--black">Radical transparency.</strong>
                                 Every rate, fee and term is laid out before you
                                 sign anything.
@@ -190,7 +151,7 @@
 
                         <li class="d-flex align-items-start mb-15">
                             <span class="color--green-500 me-3">●</span>
-                            <span class="s-14 color--grey mb-0">
+                            <span class="s-15 color--coal mb-0">
                                 <strong class="color--black">People, not paperwork.</strong>
                                 A dedicated team stays with you from application
                                 to disbursal.
@@ -199,7 +160,7 @@
 
                         <li class="d-flex align-items-start mb-0">
                             <span class="color--green-500 me-3">●</span>
-                            <span class="s-14 color--grey mb-0">
+                            <span class="s-15 color--coal mb-0">
                                 <strong class="color--black">Built on trust.</strong>
                                 Twelve-plus NBFC partners vetted for fair lending
                                 practices.
@@ -227,13 +188,13 @@
             </div>
 
             <div class="fbox-wrapper">
-                <div class="row gx-3 gy-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="row gx-3 gy-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
 
                     <div class="col">
-                        <div class="fbox-8 bg--yellow-100 fb-2 r-12 h-100 ">
+                        <div class="fbox-8 bg--yellow-100 fb-2 r-16 h-100">
                             <div class="fbox-ico ico-25">
-                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 rounded-3">
-                                    <span class="flaticon-layers-1"></span>
+                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 r-12 lh-1">
+                                    <span class="flaticon-home"></span>
                                 </div>
                             </div>
 
@@ -247,10 +208,10 @@
                     </div>
 
                     <div class="col">
-                        <div class="fbox-8 bg--yellow-100 fb-2 r-12 h-100">
+                        <div class="fbox-8 bg--yellow-100 fb-2 r-16 h-100">
                             <div class="fbox-ico ico-25">
-                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 rounded-3">
-                                    <span class="flaticon-computer-1"></span>
+                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 r-12 lh-1">
+                                    <span class="flaticon-file"></span>
                                 </div>
                             </div>
 
@@ -264,10 +225,10 @@
                     </div>
 
                     <div class="col">
-                        <div class="fbox-8 bg--yellow-100 fb-2 r-12 h-100">
+                        <div class="fbox-8 bg--yellow-100 fb-2 r-16 h-100">
                             <div class="fbox-ico ico-25">
-                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 rounded-3">
-                                    <span class="flaticon-click-1"></span>
+                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 r-12 lh-1">
+                                    <span class="flaticon-download"></span>
                                 </div>
                             </div>
 
@@ -281,10 +242,10 @@
                     </div>
 
                     <div class="col">
-                        <div class="fbox-8 bg--yellow-100 fb-3 r-12 h-100">
+                        <div class="fbox-8 bg--yellow-100 fb-3 r-16 h-100">
                             <div class="fbox-ico ico-25">
-                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 rounded-3">
-                                    <span class="flaticon-tech-support"></span>
+                                <div class="shape-ico color--theme bg--green-100 p-10 pb-0 r-12 lh-1">
+                                    <span class="flaticon-user"></span>
                                 </div>
                             </div>
 
@@ -321,7 +282,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col sec-2">
+                    <div class="col sec-2 staticts-1">
                         <div id="sb-5-3" class="text-center">
                             <div class="statistic-block">
                                 <div class="statistic-digit">
@@ -335,7 +296,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col sec-3">
+                    <div class="col sec-3 staticts-1">
                         <div id="sb-5-2" class="text-center">
                             <div class="statistic-block">
                                 <div class="statistic-digit">
@@ -349,7 +310,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col sec-4">
+                    <div class="col sec-4 staticts-1">
                         <div id="sb-5-4" class="text-center">
                             <div class="statistic-block">
                                 <div class="statistic-digit">
@@ -369,9 +330,8 @@
     </div>
     <!-- Trust Badges Section ends -->
 
-    <section id="products" class="py-80 features-section division bg--yellow-300">
+    <section id="products" class="py-80 features-section division bg--yellow-100">
         <div class="container">
-
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-9">
                     <div class="section-title text-center mb-50">
@@ -385,20 +345,18 @@
             <div class="fbox-wrapper">
                 <div class="row align-items-center justify-content-center m-auto">
                     <div class="col-sm-12 col-md-10 col-lg-6 ">
-                        <div class="fbox-8 bg--yellow-100 fb-2 h-100 ">
-                            <div class="fbox-ico ico-45">
-                                <div class="shape-ico color--theme">
-                                    <span class="flaticon-layers-1"></span>
-                                </div>
+                        <div class="fbox-8 bg--green-100 fb-2 h-100 r-22 card-main-blog">
+                            <div class="fbox-ico">
+                         <img src="{{ asset('front/images/hire-agent-img.png') }}" alt="wisemudra" class="img-fluid">
                             </div>
 
                             <div class="fbox-txt">
-                                <h4 class="s-18 w-700">Hire a Loan Agent</h4>
+                                <h4 class="color--white w-700 s-24">Hire a Loan Agent</h4>
                                 <p class="color--grey pb-3">
                                     Let our experienced professionals handle the process for you so you can move forward with ease and without stress.
                                 </p>
                                 <a href="{{ route('loan.agent.main') }}"
-                                    class="btn r-04 btn--theme hover--tra-black r-100">Apply Now</a>
+                                    class="btn r-04 btn--theme hover--tra-white r-100">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -412,9 +370,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title text-start mb-50">
-                    <span class="section-subtitle color--green-500"> — Six easy steps</span>
-                    <h2 class="s-28 color--white">How it <span class="color--green-500">works</span></h2>
-                    <p class="s-16 color--grey">6 Easy Steps To Get Started </p>
+                    <span class="section-subtitle color--green-500 text-uppercase"> — Six easy steps</span>
+                    <h2 class="s-28 color--white mb-2">How it <span class="color--green-500">works</span></h2>
+                    <p class="s-16 color--grey mt-0">6 Easy Steps To Get Started </p>
                 </div>
             </div>
             <div class="row d-flex align-items-center">
@@ -422,7 +380,7 @@
                     <div class="txt-block left-column">
                         <div class="cbox-2 process-step">
                             <div class="ico-wrap">
-                                <div class="cbox-2-ico bg--tra-black color--white">1</div>
+                                <div class="cbox-2-ico bg--tra-black color--green-500 d-flex align-items-center justify-content-center">01</div>
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
@@ -432,7 +390,7 @@
                         </div>
                         <div class="cbox-2 process-step">
                             <div class="ico-wrap">
-                                <div class="cbox-2-ico bg--tra-black color--white">2</div>
+                                <div class="cbox-2-ico bg--tra-black color--green-500 d-flex align-items-center justify-content-center">02</div>
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
@@ -442,7 +400,7 @@
                         </div>
                         <div class="cbox-2 process-step">
                             <div class="ico-wrap">
-                                <div class="cbox-2-ico bg--tra-black color--white">3</div>
+                                <div class="cbox-2-ico bg--tra-black color--green-500 d-flex align-items-center justify-content-center">03</div>
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
@@ -452,7 +410,7 @@
                         </div>
                         <div class="cbox-2 process-step">
                             <div class="ico-wrap">
-                                <div class="cbox-2-ico bg--tra-black color--white">4</div>
+                                <div class="cbox-2-ico bg--tra-black color--green-500 d-flex align-items-center justify-content-center">04</div>
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
@@ -462,7 +420,7 @@
                         </div>
                         <div class="cbox-2 process-step">
                             <div class="ico-wrap">
-                                <div class="cbox-2-ico bg--tra-black color--white">5</div>
+                                <div class="cbox-2-ico bg--tra-black color--green-500 d-flex align-items-center justify-content-center">05</div>
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
@@ -472,7 +430,7 @@
                         </div>
                         <div class="cbox-2 process-step">
                             <div class="ico-wrap">
-                                <div class="cbox-2-ico bg--tra-black color--white">6</div>
+                                <div class="cbox-2-ico bg--tra-black color--green-500 d-flex align-items-center justify-content-center">06</div>
                             </div>
                             <div class="cbox-2-txt">
                                 <h4 class="s-18 w-700 color--white">Get Approved & Disbursed</h4>
@@ -497,7 +455,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row p-30 bg--white-100 shadow border-grey-1 r-20">
+            <div class="p-30 bg--white-100 shadow border-grey-1 r-20">
+   <div class="row">
                 <div class="col-md-7 order-first order-md-2">
                     <div id="emicalculatorinnerformwrapper">
                         <form id="emicalculatorform" class="comment-form">
@@ -736,6 +695,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+         
         </div>
     </section>
     <!-- eligibility calculator ends -->
@@ -874,50 +835,50 @@
                         <div class="row gx-3 gy-3">
 
                             <div class="col-md-6 col-12">
-                                <label for="form_name" class="contact-label d-block mb-2 w-500">Full Name</label>
+                                <label for="form_name" class="contact-label d-block mb-2 w-500 color--grey text-uppercase">Full Name</label>
                                 <input id="form_name" name="fullname" type="text"
-                                    class="form-control border-bottom bg--tra-black name mb-0" placeholder="Your Name">
+                                    class="form-control border-bottom bg--tra-black name mb-0 pb-2 ps-0" placeholder="Your Name">
                                 @component('components.ajax-error', ['field' => 'fullname'])
                                 @endcomponent
                             </div>
 
                             <div class="col-md-6 col-12">
-                                <label for="form_mobile" class="contact-label d-block mb-2 w-500">Mobile</label>
+                                <label for="form_mobile" class="contact-label d-block mb-2 w-500 color--grey text-uppercase">Mobile</label>
                                 <input id="form_mobile" type="tel" name="mobile"
-                                    class="form-control border-bottom bg--tra-black numeric-input mobile mb-0"
+                                    class="form-control border-bottom bg--tra-black numeric-input mobile mb-0 pb-2 ps-0"
                                     placeholder="+91" minlength="10" maxlength="10" inputmode="numeric">
                                 @component('components.ajax-error', ['field' => 'mobile'])
                                 @endcomponent
                             </div>
 
                             <div class="col-md-6 col-12">
-                                <label for="form_email" class="contact-label d-block mb-2 w-500">Email</label>
+                                <label for="form_email" class="contact-label d-block mb-2 w-500 color--grey text-uppercase">Email</label>
                                 <input id="form_email" type="email" name="email"
-                                    class="form-control border-bottom bg--tra-black email mb-0"
+                                    class="form-control border-bottom bg--tra-black email mb-0 pb-2 ps-0"
                                     placeholder="you@example.com">
                                 @component('components.ajax-error', ['field' => 'email'])
                                 @endcomponent
                             </div>
 
                             <div class="col-md-6 col-12">
-                                <label for="form_subject" class="contact-label d-block mb-2 w-500">Subject</label>
+                                <label for="form_subject" class="contact-label d-block mb-2 w-500 color--grey text-uppercase">Subject</label>
                                 <input id="form_subject" type="text" name="subject"
-                                    class="form-control border-bottom bg--tra-black subject mb-0"
+                                    class="form-control border-bottom bg--tra-black subject mb-0 pb-2 ps-0"
                                     placeholder="Loan enquiry">
                                 @component('components.ajax-error', ['field' => 'subject'])
                                 @endcomponent
                             </div>
 
                             <div class="col-12">
-                                <label for="form_message" class="contact-label d-block mb-2 w-500">Message</label>
-                                <textarea id="form_message" name="desc" class="form-control border-bottom bg--tra-black message mb-0"
+                                <label for="form_message" class="contact-label d-block mb-2 w-500 color--grey text-uppercase">Message</label>
+                                <textarea id="form_message" name="desc" class="form-control border-bottom bg--tra-black message mb-0 pb-2 ps-0"
                                     placeholder="Tell us what you need..."></textarea>
                                 @component('components.ajax-error', ['field' => 'desc'])
                                 @endcomponent
                             </div>
 
                             <div class="col-12 pt-3">
-                                <button type="submit" class="btn btn--green-400 hover--tra-black submit"
+                                <button type="submit" class="btn btn--green-400 hover--tra-white submit r-100"
                                     id="submit-btn">
                                     Submit Request
                                 </button>

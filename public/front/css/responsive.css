@@ -620,7 +620,7 @@
   .cbox-2 .ico-wrap { margin-right: 1.1rem; }
   .cbox-2-ico { width: 2.35rem; height: 2.35rem; font-size: 1.135rem; line-height: 2rem; }
   .ct-03 .cbox-2-ico { width: 2.15rem; height: 2.15rem; font-size: 1.0625rem; line-height: 1.95rem; }
-  .cbox-2-line { height: calc(100% - 74px); }
+  .cbox-2-line { height: calc(100% - 40px); }
 
   .cbox-3 .cbox-3-ico { top: 4px; }
   .cbox-3-ico span[class*="flaticon-"]:before, .cbox-3-ico span[class*="flaticon-"]:after { font-size: 3rem; }
@@ -744,7 +744,7 @@
   #rw-3-2, #rw-3-3 { margin-left: 0; }
   #rw-4-1, #rw-5-1 { margin-bottom: 25px; }
 
-  .review-txt { margin-top: -42px; }
+  .review-txt { margin-top: 0; }
   .review-txt h6 { margin-bottom: 10px; }
 
   .review-1 .author-data { margin-top: 15px; }
@@ -2047,7 +2047,7 @@
   .cbox-2 .ico-wrap { margin-right: 1.15rem; }
   .cbox-2-ico { width: 2.15rem; height: 2.15rem; font-size: 1.125rem; line-height: 1.85rem; }
   .ct-03 .cbox-2-ico { width: 2rem; height: 2rem; font-size: 1.0625rem; line-height: 1.8rem; }
-  .cbox-2-line { height: calc(100% - 74px); }
+  .cbox-2-line { height: calc(100% - 40px); }
 
   .cbox-3 .cbox-3-ico { top: 5px; }
   .cbox-3-ico span[class*="flaticon-"]:before, .cbox-3-ico span[class*="flaticon-"]:after { font-size: 3rem; }
@@ -2206,7 +2206,7 @@
   #rw-3-2, #rw-3-3 { margin-left: 8px; }
   #rw-4-1, #rw-5-1 { margin-bottom: 25px; }
 
-  .review-txt { margin-top: -38px; }
+  .review-txt { margin-top: 0; }
   .review-txt h6 { margin-bottom: 10px; }
 
   .review-1 .author-data, .review-2 .author-data,
@@ -3606,7 +3606,7 @@
         position:absolute;
     }
     .txt-block{
-        margin-bottom: 20px!important;
+        margin-bottom: 0px!important;
     }
     .cbox-12-txt{
         display:none!important;
@@ -4142,7 +4142,7 @@
   .review-1 { padding: 35px 32px 30px; }
   .review-2, .review-3, .review-4, .review-5 { padding: 35px 35px 30px; }
 
-  .review-txt { margin-top: -43px; }
+  .review-txt { margin-top: 0; }
   .review-txt h6 { margin-bottom: 10px; }
 
   .review-1 .author-data, .review-2 .author-data,
@@ -4506,7 +4506,7 @@
   .reset-page-wrapper { margin: 0 45px; }
 
   #login .register-page-form, #signup .register-page-form { padding: 50px 40px; }
-  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 10px 40px; }
+  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 25px; }
 
   .reset-form-title { margin-bottom: 25px; }
   .reset-form-title p.p-sm { font-size: 1.0625rem; margin-top: 20px; }
@@ -5087,9 +5087,9 @@
   .cbox-1.ico-15 [class*="flaticon-"]:before, .cbox-1.ico-15 [class*="flaticon-"]:after { font-size: 0.7rem; }
 
   .cbox-2 .ico-wrap { margin-right: 1rem; }
-  .cbox-2-ico { width: 2.3rem; height: 2.3rem; font-size: 1.15rem; line-height: 2.05rem; }
+  .cbox-2-ico { width: 2.8rem; height: 2.8rem; font-size: 1.15rem; line-height: 2.05rem; }
   .ct-03 .cbox-2-ico { width: 2rem; height: 2rem; font-size: 1.0625rem; line-height: 1.8rem; }
-  .cbox-2-line { height: calc(100% - 74px); }
+  .cbox-2-line { height: calc(100% - 40px); }
 
   .cbox-3 { display: block; text-align: center; }
   .cbox-3 .ico-wrap { margin-right: 0; }
@@ -5238,7 +5238,7 @@
   .review-1 { padding: 35px 20px 30px; margin: 0 6px 20px; }
   .review-2, .review-3, .review-4, .review-5 { padding: 35px 20px 30px; }
 
-  .review-txt { margin-top: -40px; }
+  .review-txt { margin-top:0px; }
   .review-txt h6 { margin-bottom: 10px; }
   .review-3 .review-txt p { font-size: 1.0625rem; }
 
@@ -5674,7 +5674,7 @@
   .reset-page-wrapper form {  padding: 40px 20px 15px; }
 
   #login .register-page-form, #signup .register-page-form { padding: 35px 20px; }
-  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 15px; }
+  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 25px; }
 
   .reset-form-title { margin-bottom: 20px; }
   .reset-form-title p.p-sm { font-size: 1rem; margin-top: 20px; }
@@ -6260,9 +6260,9 @@
   .cbox-1.ico-15 [class*="flaticon-"]:before, .cbox-1.ico-15 [class*="flaticon-"]:after { font-size: 0.7rem; }
 
   .cbox-2 .ico-wrap { margin-right: 1rem; }
-  .cbox-2-ico { width: 2.3rem; height: 2.3rem; font-size: 1.15rem; line-height: 2.05rem; }
+  .cbox-2-ico { width: 2.6rem; height: 2.6rem; font-size: 1.15rem; line-height: 2.05rem; }
   .ct-03 .cbox-2-ico { width: 1.6rem; height: 1.6rem; font-size: 1rem; line-height: 1.4rem; }
-  .cbox-2-line { height: calc(100% - 74px); }
+  .cbox-2-line { height: calc(100% - 40px); }
 
   .cbox-3 { display: block; text-align: center; }
   .cbox-3 .ico-wrap { margin-right: 0; }
@@ -6412,7 +6412,7 @@
   .review-1 { padding: 35px 20px 30px; margin: 0 6px 20px; }
   .review-2, .review-3, .review-4, .review-5 { padding: 35px 20px 30px; }
 
-  .review-txt { margin-top: -40px; }
+  .review-txt { margin-top: 0px; }
   .review-txt h6 { margin-bottom: 10px; }
   .review-3 .review-txt p { font-size: 1.0625rem; }
 
@@ -6846,7 +6846,7 @@
   .reset-page-wrapper { margin: 0 10px; }
   .reset-page-wrapper form {  padding: 35px 10px 10px; }
   #login .register-page-form, #signup .register-page-form { padding: 35px 25px; }
-  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 15px 10px; }
+  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 25px; }
 
   .reset-page-wrapper .form-control,
   .register-page-form .form-control { height: 56px; font-size: 1.0625rem; padding: 5px 12px; margin-bottom: 20px; }
@@ -7476,7 +7476,7 @@
   .cbox-2 .ico-wrap { margin-right: 1rem; }
   .cbox-2-ico { width: 2.3rem; height: 2.3rem; font-size: 1.15rem; line-height: 2.05rem; }
   .ct-03 .cbox-2-ico { width: 1.55rem; height: 1.55rem; font-size: 1rem; line-height: 1.35rem; }
-  .cbox-2-line { height: calc(100% - 74px); }
+  .cbox-2-line { height: calc(100% - 40px); }
 
   .cbox-3 { display: block; text-align: center; }
   .cbox-3 .ico-wrap { margin-right: 0; }
@@ -7629,7 +7629,7 @@
   .review-2 { padding: 35px 20px 24px; }
   .review-3, .review-4, .review-5 { padding: 35px 25px 24px; }
 
-  .review-txt { margin-top: -43px; }
+  .review-txt { margin-top: 0px; }
   .review-txt h6 { margin-bottom: 10px; }
   .review-3 .review-txt p { font-size: 1rem; }
 
@@ -8073,7 +8073,7 @@
   .reset-page-wrapper { margin: 0 10px; }
   .reset-page-wrapper form {  padding: 35px 10px 10px; }
   #login .register-page-form, #signup .register-page-form { padding: 35px 20px; }
-  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 15px 10px; }
+  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 25px; }
 
   .reset-page-wrapper .form-control,
   .register-page-form .form-control { height: 50px; font-size: 1.0625rem; padding: 5px 12px; margin-bottom: 20px; }
@@ -8289,7 +8289,7 @@
   /* Header Logo */
   .wsmobileheader .smllogo { display: block; margin-top: 10px; padding-left: 15px; }
   .blog-header .wsmobileheader .smllogo { margin-top: 30px; }
-  .smllogo img { width: auto; max-width: inherit; max-height: 60px; }
+  .smllogo img { width: auto; max-width: inherit; max-height: 50px; }
   .blog-header .smllogo img { max-height: 60px; }
 
   .wsmenu > .wsmenu-list { width: 250px; margin-right: -250px; }
@@ -8418,7 +8418,7 @@
   .hero-6-img { margin: 30px 1% 0; }
 
   /* HERO-7 */
-  #hero-7 { padding-top: 70px; padding-bottom: 70px; }
+  #hero-7 { padding-top: 40px !important; padding-bottom: 70px; }
   .hero-7-txt h2 { padding: 0 3%; }
   #hero-7 .quick-form { margin-left: 3%; margin-right: 3%; }
   .hero-7-img { margin-top: 30px; }
@@ -8732,9 +8732,9 @@
   .cbox-1.ico-15 [class*="flaticon-"]:before, .cbox-1.ico-15 [class*="flaticon-"]:after { font-size: 0.7rem; }
 
   .cbox-2 .ico-wrap { margin-right: 1rem; }
-  .cbox-2-ico { width: 2.15rem; height: 2.15rem; font-size: 1.0625rem; line-height: 1.85rem; }
+  .cbox-2-ico { width: 2.50rem; height: 2.50rem; font-size: 1.0625rem; line-height: 1.85rem; }
   .ct-03 .cbox-2-ico { width: 1.65rem; height: 1.65rem; font-size: 1rem; line-height: 1.4rem; }
-  .cbox-2-line { height: calc(100% - 70px); }
+  .cbox-2-line { height: calc(100% - 40px); }
 
   .cbox-3 { display: block; text-align: center; }
   .cbox-3 .ico-wrap { margin-right: 0; }
@@ -8892,7 +8892,7 @@
   .review-2 { padding: 35px 15px 24px; }
   .review-3, .review-4, .review-5 { padding: 35px 25px 24px; }
 
-  .review-txt { margin-top: -40px; }
+  .review-txt { margin-top: 0px; }
   .review-txt h6 { margin-bottom: 10px; }
   .review-3 .review-txt p { font-size: 1rem; }
 
@@ -9255,7 +9255,7 @@
 
   /* FOOTER */
   .footer { padding-bottom: 30px; }
-  .footer hr { margin-top: 5px; margin-bottom: 30px; }
+  .footer hr { margin-top: 5px; margin-bottom: 5px; }
 
   #footer-10.pt-50 { padding-top: 0; }
 
@@ -9341,7 +9341,7 @@
   .reset-page-wrapper { margin: 0 10px; }
   .reset-page-wrapper form {  padding: 35px 10px 10px; }
   #login .register-page-form, #signup .register-page-form { padding: 35px 20px; }
-  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding: 5px; }
+  #login.login-1 .register-page-form, #signup.signup-1 .register-page-form { padding:20px; }
 
   .reset-page-wrapper .form-control,
   .register-page-form .form-control { height: 50px; font-size: 1.0625rem; padding: 5px 12px; margin-bottom: 20px; }
@@ -9420,8 +9420,8 @@
     .ml-55{ margin-left: 0px!important }
     #emitotalamount{ width:100%; padding:15px!important; font-size:18px; }
     .emi-apply-btn{ width: 100%!important }
-    .sec-1, .sec-3 { border-right: 1px solid #ffffff; }
-    .sec-1, .sec-2 { border-bottom: 1px solid #ffffff; }
+    .sec-1, .sec-3 { border-right: 1px solid #424040; }
+    .sec-1, .sec-2 {         border-bottom: 1px solid #424040;}
     .sec-3, .sec-4 { padding-top: 30px; }
     .sec-dark-1, .sec-dark-3 { border-right: 1px solid #ffffff; }
     .sec-dark-1, .sec-dark-2 { border-bottom: 1px solid #ffffff; }

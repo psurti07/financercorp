@@ -1,4 +1,4 @@
-<footer id="footer-3" class="pt-80 bg--green-100 mb-20">
+<footer id="footer-3" class="pt-0 bg--green-200 mb-20 pb-0 footer">
     <div class="p-60">
         <!-- FOOTER CONTENT -->
         <div class="row">

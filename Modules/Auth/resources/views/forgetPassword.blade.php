@@ -75,11 +75,11 @@
                                 </div>
                                 <!-- Form Submit Button -->
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn--theme hover--theme submit btn-login mt-0">Send</button>
+                                    <button type="submit" class="btn btn--theme hover--tra-black submit btn-login mt-0 r-100">Send</button>
                                 </div>
                                 <!-- Sign Up Link -->
                                 <div class="col-md-12">
-                                    <p class="create-account text-center">
+                                    <p class="create-account text-center mt-0">
                                         Have an account? <a href="{{ route('customer.login') }}" class="color--theme">Sign In</a>
                                     </p>
                                 </div>

@@ -11,10 +11,10 @@
                         <div class="card-body p-4">
                             <div class="text-center mb-20">
                                 <div class="mb-20">
-                                    <i class="far fa-check-circle display-1 color--green-300"></i>
+                                    <i class="far fa-check-circle display-3 color--green-500"></i>
                                 </div>
                                 <h3 class="fw-bolder mb-0">Congratulations!,</h3>
-                                <h3 class="fw-bolder color--green-300 mb-15">Payment Successful!</h3>
+                                <h3 class="fw-bolder color--green-500 mb-15">Payment Successful!</h3>
                                 <p class="mb-0 color--grey">Your payment has been successfully processed.</p>
                                 <p class="mb-0 color--grey mt-1">You can now access your pre-approved offers.</p>
                             </div>
@@ -23,28 +23,28 @@
                                     <div class="col-lg-4 col-md-4 col-12">
                                         <div class="border-0 rounded-4 px-3 py-2 bg--green-200 h-100">
                                             <p class="fw-bold mb-0">Customer Portal</p>
-                                            <p class="mt-0 color--grey">Your service is active. Log in to the portal.</p>
+                                            <p class="mt-0 text-dark">Your service is active. Log in to the portal.</p>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4 col-md-4 col-12">
                                         <div class="border-0 rounded-4 px-3 py-2 bg--green-200 h-100">
                                             <p class="fw-bold mb-0">Invoice</p>
-                                            <p class="mt-0 color--grey">Invoice is available for download in portal.</p>
+                                            <p class="mt-0 text-dark">Invoice is available for download in portal.</p>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-4 col-md-4 col-12">
                                         <div class="border-0 rounded-4 px-3 py-2 bg--green-200 h-100">
                                             <p class="fw-bold mb-0">Consultant</p>
-                                            <p class="mt-0 color--grey">Our team will contact you within 24 hrs.</p>
+                                            <p class="mt-0 text-dark">Our team will contact you within 24 hrs.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="text-center">
                                 <a href="{{ route('customer.authenticate2') }}"
-                                    class="btn btn-sm btn--theme  r-100">Access Pre-Approved
+                                    class="btn btn-sm btn--theme hover--tra-black r-100">Access Pre-Approved
                                     Offers!</a>
 
                                 <div class="mt-3"> <a href="{{ route('front.raise.request') }}" class="">Start

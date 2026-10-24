@@ -331,3 +331,56 @@
 .mobile-input:focus-within {
   border-color: #002e60;
 }
+
+
+#features-6 .fbox-8:before {
+     content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #E9ECD6;
+    border-radius: 50%;
+    top: -26px;
+    bottom: -27px;
+    right: -23px;
+}
+
+#features-6 .fbox-8:hover {
+    background: linear-gradient(270deg, #0db02b1a, #28aae21a);
+}
+
+.statistic-5-wrapper .staticts-1 {
+border-left: 1px solid #0F23182E;
+ 
+}
+
+@media screen and (min-width:991px) {
+  .company-left-content{
+border-right:1px solid #13201824;
+}
+ 
+}
+
+.statistic-5-wrapper.counter-border {
+  border-top: 1px solid #F7F3E738;
+  padding-top: 30px;
+}
+.input-group-text{
+  background: #f5fffc !important;
+}
+.details-icon {
+    width: 54px;
+    height: 54px;
+}
+
+.subscription-card .cbox-1-ico {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.role-box:hover span,
+.role-box:hover h5, .role-box:hover p{
+  color: #fff !important;
+}

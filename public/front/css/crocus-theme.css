@@ -286,7 +286,7 @@ section,
 .bg--green-500 { background-color: #48a111; }
 .bg--green-400 { background-color: #48a111; }
 .bg--green-300 { background-color: #6fd792; }
-.bg--green-200 { background-color: #cff2db; }
+.bg--green-200 { background-color: #DFE9D0; }
 .bg--green-100 { background-color: #0F2318; }
 
 .bg--pink-500 { background-color: #ff149c; }
@@ -317,7 +317,7 @@ section,
 .bg--yellow-400 { background-color: #ffbd45; }
 .bg--yellow-300 { background-color: #EFE9D8; }
 .bg--yellow-200 { background-color: #fef5cd; }
-.bg--yellow-100 { background-color: #fef9e5; }
+.bg--yellow-100 { background-color: #F7F3E7; }
 
 .bg--tra-black { background-color: rgba(0, 0, 0, .04); }
 .bg--tra-white { background-color: rgba(255, 255, 255, .15); }
@@ -2039,7 +2039,7 @@ p.video-txt-sm {
 .color--coal a,
 .color--coal li,
 .color--coal i,
-.color--coal span { color: #5c5c5c; }
+.color--coal span { color: #3C4A40; }
 
 .color--grey,
 .color--grey h1,
@@ -2561,7 +2561,7 @@ p.video-txt-sm {
 
 .tra-menu .wsmainfull {
     padding: 10px 0;
-    background-color: #ffffff !important;
+    background-color: #F6F3E7 !important;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -3921,7 +3921,7 @@ span.sm-info {
 #hero-201 {
   /* background: #fff; */
     /* background-image: url(../images/site-img-4.jpg); */
-  padding-top: 100px;
+  padding-top: 130px;
   padding-bottom: 100px;
 }
 
@@ -4506,11 +4506,12 @@ span.sm-info {
 }
 
 .fbox-8 {
-    background-color: #fef9e5;
-    border: 1px solid #13201824;
-    border-radius: 10px;
+    
+    border: 1px solid #13201824; 
     padding: 1.5rem 1rem; 
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
 }
 .fbox-8.fbox--hover:hover {
     transform: translateY(-10px);
@@ -5030,8 +5031,8 @@ h5.h5-title {
 
 .cbox-2-ico {
     position: relative;
-    width: 2.625rem;
-    height: 2.625rem;
+    width: 60px;
+    height:60px;
     text-align: center;
     border-radius: 100%;
     font-size: 1.1875rem;
@@ -5055,11 +5056,11 @@ h5.h5-title {
 
 .cbox-2-line {
     position: absolute;
-    bottom: 20px;
+    bottom: 5px;
     left: 50%;
-    width: 2px;
-    background-color: #e4e4e4;
-    height: calc(100% - 90px);
+    width: 1px;
+    border: 1px dashed #48a111 !important;
+    height: calc(100% - 68px);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -5561,7 +5562,7 @@ h5.h5-title {
 
 .quote p {
     color: #666;
-    border-left: 3px solid #0195ff;
+    border-left: 3px solid #48A111;
     font-style: italic;
     padding-left: 20px;
     margin-bottom: 12px;
@@ -6216,7 +6217,10 @@ p.rbox-2-txt span {
 
 .review-1 {
     padding: 25px 20px 25px;
-    margin: 0 10px 30px;
+    margin: 10px 10px 30px;
+        transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .review-1.block-border {
@@ -8688,6 +8692,8 @@ span.release-date span {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 12px;
+    height: 52px;
+    min-height: 52px;
 }
 
 .bg--snow .contact-form .form-control,
@@ -9572,7 +9578,7 @@ img.footer-logo-dark {
     padding: 20px 30px;
     background-color: #FFF;
     border: 1px solid #ebebeb;
-    border-radius: 10px;
+    border-radius: 24px;
 }
 
 .reset-page-wrapper {
@@ -11153,7 +11159,7 @@ body.theme--dark {
 /* range slider css starts */
 .range {
     display: flex;
-    width: 600px;
+    flex-wrap: wrap;
 }
 
 .range__slider {
@@ -11201,15 +11207,15 @@ body.theme--dark {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #1C8EF9;
-    border: #fff 5px solid;
+    background: transparent;
+    border: #000000 5px solid;
     cursor: pointer;
     -webkit-transition: background .15s ease-in-out;
     transition: background .15s ease-in-out;
 }
 
 .range__slider [type="range"]::-webkit-slider-thumb:hover {
-    background: #02a6fc;
+    background: #48A111;
 }
 
 .range__slider [type="range"]::-moz-range-thumb {
@@ -11217,7 +11223,7 @@ body.theme--dark {
     height: 20px;
     border: 0;
     border-radius: 50%;
-    background: #02a6fc;
+    background: transparent;
     border: #000000 5px solid;
     cursor: pointer;
     -webkit-transition: background .15s ease-in-out;
@@ -11567,9 +11573,7 @@ input::-moz-focus-outer {
 .content > a:hover{
     color: #48a111!important;
 }
-.img-fluid{
-    padding:10px !important;
-}
+ 
 .cities>ul>li>p>a {
     color: #48a111;
     font-weight: 500;

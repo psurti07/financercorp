@@ -23,12 +23,12 @@
         class="bg--green-100 personal-details-form pb-60 inner-page-hero contacts-section division min-vh-100 ">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-lg-4 col-12 order-md-1 order-2 mt-md-0 mt-0">
+            <div class="col-md-5 col-lg-4 col-12 order-md-1 order-2 mt-md-0 mt-20">
                     <div class="txt-block left-column r-24 p-4 bg--yellow-100">
                         <div class="accordion accordion-flush mb-10" id="accordionFlushExample">
                             <div class="accordion-item bg-transparent">
-                                <h2 class="accordion-header mb-0" id="flush-headingOne">
-                                    <button class="accordion-button color--grey text-uppercase" type="button"
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button color--dark text-uppercase" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true"
                                         aria-controls="flush-collapseOne">
                                         User Details
@@ -36,18 +36,12 @@
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body bg--white-100 r-18 p-0 mt-2">
-                                        <div class="d-flex justify-content-between px-3 pb-2">
-                                            <p class="s-14 mb-0">Fullname :</p>
-                                            <p class="s-14 mb-0">
-                                                &#8377;{{ Cookie::get('fullname') }}</p>
-                                        </div>
-                                        <hr class="divider">
-                                        <div class="d-flex justify-content-between px-3 pb-2">
+                                    <div class="accordion-body bg--white-100 r-18 p-0 mt-2 border">
+                                        <div class="d-flex justify-content-between px-3 py-1 border-bottom">
                                             <p class="s-14 mb-0">Mobile :</p>
                                             <p class="s-14 mb-0">{{ Cookie::get('user_mobile') }}</p>
                                         </div>
-                                        <hr class="divider">
+                                   
                                         <div class="d-flex justify-content-between px-3 pb-2">
                                             <p class="s-14 mb-0">Loan Amount :</p>
                                             <p class="s-14 mb-0">
@@ -57,15 +51,12 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="p-2 pb-0">
                             <p class="s-12 mt-10 mb-10 color--grey text-uppercase">Application Process </p>
 
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico text-white bg--green-100 border border-green">
+                                    <div class="cbox-12-ico text-white bg--green-400 border border-green">
                                         <span class="fbox-ico ico-9 lh-1"> <span
                                                 class="flaticon-check ms-0 color--white lh-1"></span></span>
                                     </div>
@@ -76,51 +67,48 @@
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico text-white bg--green-100 border border-green">
+                                    <div class="cbox-12-ico text-white bg--green-400 border border-green">
                                         <span class="fbox-ico ico-9 lh-1"> <span
-                                                class="flaticon-check ms-0 color--white lh-1"></span></span>
-                                    </div>
+                                                class="flaticon-right-arrow ms-0 color-dark lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
-                                    <p class="s-11 mb-0">Personal Details</p>
+                                    <p class="s-11  mb-0">Personal Details</p>
                                 </div>
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico border-success"><span class="fbox-ico ico-9 lh-1"> <span
-                                                class="flaticon-right-arrow ms-0 color--green-300 lh-1"></span></span></div>
+                                    <div class="cbox-12-ico border-dark"><span class="fbox-ico ico-9 lh-1">
+                                            <span class="flaticon-right-arrow ms-0  lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
-                                    <p class="s-11 mb-0">Unlock Offers</p>
+                                    <p class="s-11 color--grey mb-0">Unlock Offers</p>
                                 </div>
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico border-dark-subtle bg--yellow-300"><span
-                                            class="fbox-ico ico-9 lh-1"> <span
-                                                class="flaticon-right-arrow ms-0 color--white lh-1"></span></span></div>
+                                    <div class="cbox-12-ico border-dark-subtle bg-white"><span class="fbox-ico ico-9 lh-1">
+                                            <span class="flaticon-right-arrow ms-0  lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
-                                    <p class="s-11 mb-0">Purchase Plan</p>
+                                    <p class="s-11 color--grey mb-0">Purchase Plan</p>
                                 </div>
                             </div>
                             <div class="cbox-12 process-step">
                                 <div class="ico-wrap">
-                                    <div class="cbox-12-ico border-dark-subtle bg--yellow-300"><span
-                                            class="fbox-ico ico-9 lh-1"> <span
-                                                class="flaticon-right-arrow ms-0 color--white lh-1"></span></span></div>
+                                    <div class="cbox-12-ico border-dark-subtle bg-white"><span class="fbox-ico ico-9 lh-1">
+                                            <span class="flaticon-right-arrow ms-0  lh-1"></span></span></div>
                                 </div>
                                 <div class="cbox-12-txt mb-0">
-                                    <p class="s-11 mb-0">Personalized Offers</p>
+                                    <p class="s-11 color--grey mb-0">Personalized Offers</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="img-block mt-20">
-                        <img src="{{ asset('front/images/details-img.png') }}" alt="login now" class="p-0 w-100">
+                        <img src="{{ asset('front/images/digital-img.png') }}" alt="login now" class="p-0 w-100">
                     </div>
                 </div>
-                <div class="col-md-8 col-lg-8 col-12 mt-md-0 mt-20 order-md-2 order-1">
+                <div class="col-md-7 col-lg-8 col-12 mt-md-0 mt-20 order-md-2 order-1">
                     <div class="txt-block left-column r-24 p-4 bg--yellow-100">
                         <div class="card-body">
                             <h4 class="fw-bolder mb-10">You’re Eligible For Loan Offers.</h4>
