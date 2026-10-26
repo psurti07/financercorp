@@ -44,7 +44,7 @@
                             </div>
                             <div class="col sec-2 staticts-1 staticts-border mt-0">
                                 <div id="sb-5-3" class="text-center">
-                                    <div class="statistic-block ttext-lg-start text-center">
+                                    <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
                                                 <span class="count-element">10</span>Cr+

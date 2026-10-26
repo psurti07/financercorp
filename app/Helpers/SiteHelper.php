@@ -115,7 +115,7 @@ if (!function_exists('nbfcsList')) {
                             </a>
                         </div>';
 
-            $data['carousel'] .= '<div class="bg--white-100 border border-primary r-10 mb-20">
+            $data['carousel'] .= '<div class="bg--white-100 border border-primary r-10 mb-20 p-10">
                                     <a href="javascript:;">
                                         <img class="img-fluid" src="https://manage.mymoneylend.com/public/upload/banks/'.$bank->bank_image.'" alt="' . $bank->bank_name . '" width="auto">
                                     </a>
