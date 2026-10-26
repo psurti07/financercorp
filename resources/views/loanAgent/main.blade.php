@@ -79,7 +79,7 @@
                 <div class="statistic-5-wrapper mt-4">
                     <div class="row row-cols-2 row-cols-md-4">
                         <div class="col sec-1 staticts-1">
-                            <div id="sb-5-1" class="text-center mb-4">
+                            <div id="sb-5-1" class="text-center">
                                 <div class="statistic-block">
                                     <div class="statistic-digit">
                                         <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                         <div class="col sec-2 staticts-1 staticts-border">
-                            <div id="sb-5-3" class="text-center mb-4">
+                            <div id="sb-5-3" class="text-center">
                                 <div class="statistic-block">
                                     <div class="statistic-digit">
                                         <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="col sec-3 staticts-1 staticts-border-top">
-                            <div id="sb-5-2" class="text-center mb-4">
+                            <div id="sb-5-2" class="text-center">
                                 <div class="statistic-block">
                                     <div class="statistic-digit">
                                         <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="col sec-4 staticts-1">
-                            <div id="sb-5-4" class="text-center mb-4">
+                            <div id="sb-5-4" class="text-center">
                                 <div class="statistic-block">
                                     <div class="statistic-digit">
                                         <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -341,7 +341,7 @@
             <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
 
                 <div class="col">
-                    <div class="fbox-8 bg--yellow-100 fb-2 r-12 h-100 ">
+                    <div class="fbox-8 bg--yellow-100 fb-2 r-12 h-100">
                         <div class="fbox-ico ico-25">
                             <div class="shape-ico color--theme bg--green-100 p-10 pb-0 rounded-3 lh-1">
                                 <span class="flaticon-home"></span>

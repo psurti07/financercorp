@@ -29,8 +29,8 @@
                    
                     <div class="statistic-5-wrapper mt-4 counter-border">
                         <div class="row row-cols-2 row-cols-md-4 g-2">
-                            <div class="col sec-1 staticts-1 staticts-1">
-                                <div id="sb-5-1" class="text-center mb-40">
+                            <div class="col sec-1 staticts-1 staticts-1 mt-0">
+                                <div id="sb-5-1" class="text-center">
                                     <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -44,7 +44,7 @@
                                 </div>
                             </div>
                             <div class="col sec-2 staticts-1 staticts-border mt-0">
-                                <div id="sb-5-3" class="text-center mb-40">
+                                <div id="sb-5-3" class="text-center">
                                     <div class="statistic-block ttext-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="col sec-3 staticts-1 staticts-border-top mt-0">
-                                <div id="sb-5-2" class="text-center mb-40">
+                                <div id="sb-5-2" class="text-center">
                                     <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                             <div class="col sec-4 staticts-1">
-                                <div id="sb-5-4" class="text-center mb-40">
+                                <div id="sb-5-4" class="text-center">
                                     <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
@@ -878,7 +878,7 @@
                             </div>
 
                             <div class="col-12 pt-3">
-                                <button type="submit" class="btn btn--green-400 hover--tra-white submit r-100"
+                                <button type="submit" class="btn btn--green-400 hover--tra-black submit r-100"
                                     id="submit-btn">
                                     Submit Request
                                 </button>
