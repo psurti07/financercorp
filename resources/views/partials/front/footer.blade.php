@@ -1,5 +1,5 @@
-<footer id="footer-3" class="pt-0 bg--green-200 mb-20 pb-0 footer">
-    <div class="p-60">
+<footer id="footer-3" class="pt-0 bg--green-200 pb-0 footer">
+    <div class="p-60 pb-20">
         <!-- FOOTER CONTENT -->
         <div class="row">
             <!-- FOOTER LOGO -->
@@ -7,7 +7,7 @@
                 <div class="footer-info">
                     <img class="footer-logo" src="{{ asset('front/images/logo/logo-w.png') }}" alt="{{ config('constant.APP_NAME') }}" />
                     <div class="fs-6 mt-3 mb-5 text-light">
-                        <p>Financer Corp is one of India’s thriving financial consultation and services companies. We help individuals in meeting their financial needs by offering personalized, expert-led financial consultation and services. </p>
+                        <p>Financer Corp provides loan application support and guidance. We help individuals understand documentation, application steps and general lender requirements through our associated NBFC partner network.</p>
                     </div>
                     <ul class="footer-socials mt-4 ico-25 text-center clearfix">
                         <li>

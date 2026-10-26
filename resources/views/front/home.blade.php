@@ -14,11 +14,10 @@
 
                 <div class="col-md-12 col-lg-6 col-12">
                     <div class="hero-7-txt mb-4">
-                        <span class="color--blue-500 text-uppercase mb-2 d-block s-10">RBI-aligned NBFC marketplace</span>
-                        <h1 class="w-700 color--white mb-3">Experience the Best Financial Consultation and Services<span
-                                class="color--blue-500"> At Your Fingertips</span></h1>
-                        <p class=" color--white mb-4">Achieve your financial goals in a smarter way with premier financial
-                            services from industry experts.</p>
+                        <span class="color--blue-500 text-uppercase mb-2 d-block s-10">LOAN APPLICATION SUPPORT PLATFORM</span>
+                        <h1 class="w-700 color--white mb-3">Clear Financial Guidance For Every <span
+                                class="color--blue-500">Application Step</span></h1>
+                        <p class=" color--white mb-4">Get support with documents, application steps and lender requirements through our associated NBFC partner network.</p>
                         {{-- <a href="{{ route('self.apply.main') }}"
                          class="btn r-04 btn--theme hover--tra-white last-link me-2 mb-md-0 mb-0">Self
                          Apply</a> --}}
@@ -34,11 +33,11 @@
                                     <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
-                                                <span class="count-element">4500</span>+
+                                                <span class="count-element">10000</span>+
                                             </h4>
                                         </div>
                                         <div class="statistic-txt">
-                                            <p class="s-11 w-500 color--grey text-uppercase">Happy Customer</p>
+                                            <p class="s-11 w-500 color--grey text-uppercase">Happy Customers</p>
                                         </div>
                                     </div>
                                 </div>
@@ -48,11 +47,11 @@
                                     <div class="statistic-block ttext-lg-start text-center">
                                         <div class="statistic-digit">
                                             <h4 class="s-26 w-700 mb-2 color--green-500">
-                                                <span class="count-element">4</span>5Cr+
+                                                <span class="count-element">10</span>Cr+
                                             </h4>
                                         </div>
                                         <div class="statistic-txt">
-                                            <p class="s-11 w-500 color--grey text-uppercase">Successful Disbursals </p>
+                                            <p class="s-11 w-500 color--grey text-uppercase">Application Value Assisted</p>
                                         </div>
                                     </div>
                                 </div>
@@ -101,26 +100,15 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 pe-lg-40 company-left-content">
-                    <h6 class="s-14 txt-upcase mb-20">About Financer Corp</h6>
+                    <h6 class="s-14 txt-upcase mb-20">About FinancerCorp</h6>
                     <div class="mb-20 quote">
                         <p class="s-18 mb-0 text-dark">
-                            At Financer Corp, we are committed to making financial solutions more accessible, reliable, and
-                            convenient for individuals across India. Backed by enriching partnerships with multiple
-                            industry-leading NBFCs, we offer premier financial consultation and services designed to match
-                            different financial needs.
+                            At FinancerCorp, we provide clear loan application support to help individuals understand documents, application steps and general lender requirements. We work with associated NBFC partners to help make the process more transparent and easier to navigate.
                         </p>
                     </div>
 
                     <p class="s-15 color--coal mb-15">
-                        Our focus is on understanding what works best for each individual and guiding them with personalized
-                        support at every step. With a team of seasoned experts and our streamlined digital portal, we help
-                        people make sound financial decisions and move forward with more confidence and clarity.
-                    </p>
-
-                    <p class="s-15 color--coal mb-0">
-                        Customer satisfaction remains at the heart of everything we do. Through this customer-first
-                        approach, we ensure every individual receives the experience and services they look for while
-                        fulfilling their financial goals with ease.
+                        Our team provides guidance with document preparation, application information and next-step support. FinancerCorp does not provide loans or make lending decisions.
                     </p>
 
                 </div>
@@ -134,36 +122,32 @@
                         <li class="d-flex align-items-start mb-15">
                             <span class="color--green-500 me-3">●</span>
                             <span class="s-15 color--coal mb-0">
-                                <strong class="color--black">No cookie-cutter solutions.</strong>
-                                We take time to understand each person's situation
-                                before recommending a lender.
+                                <strong class="color--black">Clear application guidance.</strong>
+                                Understand the documents and steps involved in a loan application.
                             </span>
                         </li>
 
                         <li class="d-flex align-items-start mb-15">
                             <span class="color--green-500 me-3">●</span>
                             <span class="s-15 color--coal mb-0">
-                                <strong class="color--black">Radical transparency.</strong>
-                                Every rate, fee and term is laid out before you
-                                sign anything.
+                                <strong class="color--black">Transparent service information.</strong>
+                                Any applicable service fee is shared before you choose support.
                             </span>
                         </li>
 
                         <li class="d-flex align-items-start mb-15">
                             <span class="color--green-500 me-3">●</span>
                             <span class="s-15 color--coal mb-0">
-                                <strong class="color--black">People, not paperwork.</strong>
-                                A dedicated team stays with you from application
-                                to disbursal.
+                                <strong class="color--black">Support through the process.</strong>
+                              Receive guidance until your application is submitted for NBFC review.
                             </span>
                         </li>
 
                         <li class="d-flex align-items-start mb-0">
                             <span class="color--green-500 me-3">●</span>
                             <span class="s-15 color--coal mb-0">
-                                <strong class="color--black">Built on trust.</strong>
-                                Twelve-plus NBFC partners vetted for fair lending
-                                practices.
+                                <strong class="color--black">Associated NBFC network.</strong>
+                                We work with associated NBFC partners, subject to their respective criteria.
                             </span>
                         </li>
                     </ul>
@@ -199,9 +183,9 @@
                             </div>
 
                             <div class="fbox-txt">
-                                <h4 class="s-18 w-700">Easy Access to Top NBFCs</h4>
+                                <h4 class="s-18 w-700">Associated NBFC Network</h4>
                                 <p class="color--grey">
-                                    Gain access to several industry-leading NBFCs, all from the comfort of your home.
+                                    Explore application support through our associated NBFC partner network.
                                 </p>
                             </div>
                         </div>
@@ -216,9 +200,9 @@
                             </div>
 
                             <div class="fbox-txt">
-                                <h4 class="s-18 w-700">100% Online Process</h4>
+                                <h4 class="s-18 w-700">Digital Application Support</h4>
                                 <p class="color--grey">
-                                    Relax and enjoy premier financial services in a very simple and convenient way.
+                                    Complete application steps online where available.
                                 </p>
                             </div>
                         </div>
@@ -233,9 +217,9 @@
                             </div>
 
                             <div class="fbox-txt">
-                                <h4 class="s-18 w-700">Expert Financial Consultation </h4>
+                                <h4 class="s-18 w-700">Application Guidance </h4>
                                 <p class="color--grey">
-                                    Make your financial journey easier with the help of our experienced professionals.
+                                    Get clear guidance on documents, application steps and general lender requirements.
                                 </p>
                             </div>
                         </div>
@@ -250,9 +234,9 @@
                             </div>
 
                             <div class="fbox-txt">
-                                <h4 class="s-18 w-700">Your Way, Your Choice</h4>
+                                <h4 class="s-18 w-700">Choose Your Support Option</h4>
                                 <p class="color--grey">
-                                    Apply yourself or hire a loan agent – Proceed in a way that is most convenient for you.
+                                    Apply independently or request application support based on your preference.
                                 </p>
                             </div>
                         </div>
@@ -273,7 +257,7 @@
                             <div class="statistic-block">
                                 <div class="statistic-digit">
                                     <h2 class="s-30 w-700 mb-10">
-                                        <span class="count-element">4500</span>+
+                                        <span class="count-element">10000</span>+
                                     </h2>
                                 </div>
                                 <div class="statistic-txt">
@@ -287,11 +271,11 @@
                             <div class="statistic-block">
                                 <div class="statistic-digit">
                                     <h2 class="s-30 w-700 mb-10">
-                                        <span class="count-element">4</span>.<span class="count-element">5</span>Cr+
+                                        <span class="count-element">45</span>Cr+
                                     </h2>
                                 </div>
                                 <div class="statistic-txt">
-                                    <h5 class="s-16 w-500">Successful Disbursals</h5>
+                                    <h5 class="s-16 w-500">Application Value Assisted</h5>
                                 </div>
                             </div>
                         </div>
@@ -335,9 +319,9 @@
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-9">
                     <div class="section-title text-center mb-50">
-                        <span class="section-subtitle color--green-500"> — Choose your path</span>
-                        <h2 class="s-28">Achieve Financial Success in a More <span class="color--green-500">Strategic Manner</span></h2>
-                        <p class="s-16 color--grey">Select The Plan That Best Fits Your Preferences </p>
+                        <span class="section-subtitle color--green-500"> APPLICATION SUPPORT OPTIONS </span>
+                        <h2 class="s-28">Choose the Support That Suits <span class="color--green-500">Your Application</span></h2>
+                        <p class="s-16 color--grey">Explore guidance for documents, application steps and lender requirements. </p>
                     </div>
                 </div>
             </div>
@@ -353,7 +337,7 @@
                             <div class="fbox-txt">
                                 <h4 class="color--white w-700 s-24">Hire a Loan Agent</h4>
                                 <p class="color--grey pb-3">
-                                    Let our experienced professionals handle the process for you so you can move forward with ease and without stress.
+                                   Get guidance on required documents and application steps. Final eligibility, terms and approval are determined by the respective NBFC.
                                 </p>
                                 <a href="{{ route('loan.agent.main') }}"
                                     class="btn r-04 btn--theme hover--tra-white r-100">Apply Now</a>
@@ -370,9 +354,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title text-start mb-50">
-                    <span class="section-subtitle color--green-500 text-uppercase"> — Six easy steps</span>
+                    <span class="section-subtitle color--green-500 text-uppercase"> — Six Simple steps</span>
                     <h2 class="s-28 color--white mb-2">How it <span class="color--green-500">works</span></h2>
-                    <p class="s-16 color--grey mt-0">6 Easy Steps To Get Started </p>
+                    <p class="s-16 color--grey mt-0">A clear process for application guidance and support. </p>
                 </div>
             </div>
             <div class="row d-flex align-items-center">
@@ -384,8 +368,8 @@
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
-                                <h4 class="s-18 w-700 color--white">Share Your Requirements</h4>
-                                <p class="mb-0 color--grey">Begin the process by entering your full name, registered number, email address, and other required information. </p>
+                                <h4 class="s-18 w-700 color--white">Share Basic Details</h4>
+                                <p class="mb-0 color--grey">Begin by sharing your contact details and loan application requirements.</p>
                             </div>
                         </div>
                         <div class="cbox-2 process-step">
@@ -394,8 +378,8 @@
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
-                                <h4 class="s-18 w-700 color--white">Complete Your Profile</h4>
-                                <p class="mb-0 color--grey">Our system will determine your eligibility based on the information you provided. Please note that this is not a final offer. </p>
+                                <h4 class="s-18 w-700 color--white">Review Application Details</h4>
+                                <p class="mb-0 color--grey">We review the information provided to guide you on relevant documents and next steps. This does not determine or guarantee eligibility.</p>
                             </div>
                         </div>
                         <div class="cbox-2 process-step">
@@ -404,8 +388,8 @@
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
-                                <h4 class="s-18 w-700 color--white">Discover Tailored Offers</h4>
-                                <p class="mb-0 color--grey">Gain access to the displayed offer by purchasing the plan that best meets your needs and preferences. </p>
+                                <h4 class="s-18 w-700 color--white">Choose Application Support</h4>
+                                <p class="mb-0 color--grey">Review the available support option and any applicable service fee before proceeding.</p>
                             </div>
                         </div>
                         <div class="cbox-2 process-step">
@@ -414,8 +398,8 @@
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
-                                <h4 class="s-18 w-700 color--white">Choose the Best Option</h4>
-                                <p class="mb-0 color--grey">Our team will contact you within 24-48 hours for verification and guide you through the next steps to ensure a smooth process.</p>
+                                <h4 class="s-18 w-700 color--white">Submit Required Documents</h4>
+                                <p class="mb-0 color--grey">Get guidance on the documents required for the application process.</p>
                             </div>
                         </div>
                         <div class="cbox-2 process-step">
@@ -424,8 +408,8 @@
                                 <span class="cbox-2-line"></span>
                             </div>
                             <div class="cbox-2-txt">
-                                <h4 class="s-18 w-700 color--white">Get Approved & Disbursed</h4>
-                                <p class="mb-0 color--grey">The NBFC will review your profile and documents in accordance with their policies and procedures.</p>
+                                <h4 class="s-18 w-700 color--white">NBFC Review</h4>
+                                <p class="mb-0 color--grey">The respective NBFC reviews the application and documents according to its own policies and criteria.</p>
                             </div>
                         </div>
                         <div class="cbox-2 process-step">
@@ -433,8 +417,8 @@
                                 <div class="cbox-2-ico bg--tra-black color--green-500 d-flex align-items-center justify-content-center">06</div>
                             </div>
                             <div class="cbox-2-txt">
-                                <h4 class="s-18 w-700 color--white">Get Approved & Disbursed</h4>
-                                <p class="mb-0 color--grey">The NBFC will make the final decision on loan approval, sanction, and disbursement based on their terms.</p>
+                                <h4 class="s-18 w-700 color--white">Receive NBFC Decision</h4>
+                                <p class="mb-0 color--grey">The respective NBFC communicates the final decision, including eligibility, terms and next steps.</p>
                             </div>
                         </div>
                     </div>
@@ -450,13 +434,13 @@
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-10">
                     <div class="section-title mb-40">
-                        <h2 class="s-28">Calculate <span class="color--green-500">Your EMI Instantly</span></h2>
-                        <p class="s-16 color--grey">Make More Confident Financial Decisions</p>
+                        <h2 class="s-28">Estimate <span class="color--green-500">Your EMI Easily</span></h2>
+                        <p class="s-16 color--grey">Estimate your monthly EMI based on the amount, interest rate and tenure you select.</p>
                     </div>
                 </div>
             </div>
             <div class="p-30 bg--white-100 shadow border-grey-1 r-20">
-   <div class="row">
+            <div class="row">
                 <div class="col-md-7 order-first order-md-2">
                     <div id="emicalculatorinnerformwrapper">
                         <form id="emicalculatorform" class="comment-form">
@@ -710,7 +694,7 @@
                     <div class="col-md-10 col-lg-9">
                         <div class="section-title text-center mb-50">
                             <span class="section-subtitle color--green-500"> — Our network</span>
-                            <h2 class="s-28">Our <span class="color--green-500">NBFC Partners</span></h2>
+                            <h2 class="s-28">Our <span class="color--green-500">partnered NBFC</span></h2>
                             <p class="s-16 color--grey">Collaborating With The Finest In The Industry</p>
                         </div>
                     </div>
