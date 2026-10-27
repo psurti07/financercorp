@@ -335,7 +335,7 @@
                             </div>
 
                             <div class="fbox-txt">
-                                <h4 class="color--white w-700 s-24">Hire a Agent</h4>
+                                <h4 class="color--white w-700 s-24">Hire Agent</h4>
                                 <p class="color--grey pb-3">
                                    Get guidance on required documents and application steps. Final eligibility, terms and approval are determined by the respective NBFC.
                                 </p>
