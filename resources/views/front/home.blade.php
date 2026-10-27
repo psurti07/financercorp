@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col sec-4 staticts-1">
+                            <div class="col sec-4 staticts-1 mt-0">
                                 <div id="sb-5-4" class="text-center">
                                     <div class="statistic-block text-lg-start text-center">
                                         <div class="statistic-digit">
@@ -335,7 +335,7 @@
                             </div>
 
                             <div class="fbox-txt">
-                                <h4 class="color--white w-700 s-24">Hire a Loan Agent</h4>
+                                <h4 class="color--white w-700 s-24">Hire a Agent</h4>
                                 <p class="color--grey pb-3">
                                    Get guidance on required documents and application steps. Final eligibility, terms and approval are determined by the respective NBFC.
                                 </p>
@@ -694,7 +694,7 @@
                     <div class="col-md-10 col-lg-9">
                         <div class="section-title text-center mb-50">
                             <span class="section-subtitle color--green-500"> — Our network</span>
-                            <h2 class="s-28">Our <span class="color--green-500">partnered NBFC</span></h2>
+                            <h2 class="s-28">Our <span class="color--green-500">Partnered NBFC</span></h2>
                             <p class="s-16 color--grey">Collaborating With The Finest In The Industry</p>
                         </div>
                     </div>
@@ -855,8 +855,8 @@
 
                             <div class="col-12">
                                 <label for="form_message" class="contact-label d-block mb-2 w-500 color--grey text-uppercase">Message</label>
-                                <textarea id="form_message" name="desc" class="form-control border-bottom bg--tra-black message mb-0 pb-2 ps-0"
-                                    placeholder="Tell us what you need..."></textarea>
+                                <textarea id="form_message" name="desc" class="form-control h-auto border-bottom bg--tra-black message mb-0 pb-2 ps-0"
+                                    placeholder="Tell us what you need..." rows="5"></textarea>
                                 @component('components.ajax-error', ['field' => 'desc'])
                                 @endcomponent
                             </div>
