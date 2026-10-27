@@ -273,7 +273,7 @@ a#failed-btn:hover {
                                                 <div id="rb-1-2" class="rbox-1">
                                                     <div class="rbox-1-img mb-0">
                                                         <img class="w-100 p-0"
-                                                            src="{{ asset('front/images/google.png') }}"
+                                                            src="{{ asset('front/images/Google.png') }}"
                                                             alt="feature-image">
                                                     </div>
                                                     <div class="star-rating ico-10 clearfix color--grey">
