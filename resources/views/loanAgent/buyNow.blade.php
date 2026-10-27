@@ -142,21 +142,21 @@ a#failed-btn:hover {
                             <div class="row gx-3 gy-3">
                                 <div class="col-lg-6 col-md-12 col-12">
                                     <label class="r-24 overflow-hidden  w-100 subscription-card border">
-                                        <input name="plan" value="1" class="radio d-none" type="radio" checked
-                                            data-plan="Self-Apply">
+                                        <input name="plan" value="2" class="radio d-none" type="radio" checked
+                                            data-plan="loan-agent">
                                         <div>
                                             <p
                                                 class="mb-0 text-center fs-12 fw-bold btn--yellow-500 px-2 py-0 mt-0 text-white">
-                                                77% OFF</p>
+                                                {{ calPercentage($hireAgent->amount, $hireAgent->offeramount) }} OFF</p>
                                             <div class="p-4 bg--white-100">
-                                                <h5 class="fw-bolder s-16 mb-10">Self-Apply Plan</h5>
+                                                <h5 class="fw-bolder s-16 mb-10">Hire Agent Plan</h5>
                                                 <div class="price my-2">
                                                     <!-- Monthly Price -->
                                                     <div class="price2">
                                                         <sup class="color--red-300">₹</sup>
                                                         <sup
-                                                            class="coins color--red-300"><strike>{{ intval($selfApply->amount) }}</strike></sup>
-                                                        <span class="">{{ intval($selfApply->offeramount) }}</span>
+                                                            class="coins color--red-300"><strike>{{ intval($hireAgent->amount) }}</strike></sup>
+                                                        <span class="">{{ intval($hireAgent->offeramount) }}</span>
                                                     </div>
                                                 </div>
                                                 <div class="order-summary pt-0 pb-0">
@@ -168,25 +168,25 @@ a#failed-btn:hover {
                                                     <div class="order-row">
                                                         <span class="">Price</span>
                                                         <span
-                                                            class="color--grey">{{ formatePriceIndia($selfApply->amount) }}</span>
+                                                            class="color--grey">{{ formatePriceIndia($hireAgent->amount) }}</span>
                                                     </div>
 
                                                     <div class="order-row order-discount">
                                                         <span class="">Discount</span>
                                                         <span class="color--grey">-
-                                                            {{ formatePriceIndia($selfApply->amount - $selfApply->offeramount) }}</span>
+                                                            {{ formatePriceIndia($hireAgent->amount - $hireAgent->offeramount) }}</span>
                                                     </div>
 
                                                     <div class="order-row">
                                                         <span class="">Offer Amount</span>
                                                         <span
-                                                            class="color--grey">{{ formatePriceIndia($selfApply->offeramount) }}</span>
+                                                            class="color--grey">{{ formatePriceIndia($hireAgent->offeramount) }}</span>
                                                     </div>
 
                                                     <div class="order-row pb-3">
                                                         <span class="">GST</span>
                                                         <span class="color--grey">+
-                                                            {{ formatePriceIndia($selfApply->offeramount * 0.18) }}</span>
+                                                            {{ formatePriceIndia($hireAgent->offeramount * 0.18) }}</span>
                                                     </div>
 
                                                     <div class="details-main"></div>
@@ -196,7 +196,7 @@ a#failed-btn:hover {
                                                     <div class="order-row order-total pt-3">
                                                         <h5 class="">Total</h5>
                                                         <h5 class="">₹
-                                                            {{ formatePriceIndia($selfApply->offeramount + $selfApply->offeramount * 0.18) }}
+                                                            {{ formatePriceIndia($hireAgent->offeramount + $hireAgent->offeramount * 0.18) }}
                                                         </h5>
                                                     </div>
                                                 </div>
